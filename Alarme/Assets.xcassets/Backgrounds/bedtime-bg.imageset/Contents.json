@@ -1,33 +1,23 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "filename" : "Alarme_backgrounds-3.pdf"
+      "filename" : "bedtime-bg.pdf",
+      "idiom" : "universal"
     },
     {
-      "idiom" : "universal",
-      "filename" : "Alarme_backgrounds-5.pdf",
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "light"
-        }
-      ]
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "Alarme_backgrounds-4.pdf",
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "bedtime-bg-dark.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   },
   "properties" : {
     "preserves-vector-representation" : true

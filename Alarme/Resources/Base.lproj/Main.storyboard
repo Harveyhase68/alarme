@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTQ-Kb-CIV">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alarms View Controller-->
+        <!--Alarms-->
         <scene sceneID="Tza-HU-zN1">
             <objects>
-                <tableViewController id="8iR-dY-evB" userLabel="Alarms View Controller" sceneMemberID="viewController">
+                <tableViewController id="8iR-dY-evB" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KNA-mm-36N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="13622" y="907"/>
         </scene>
-        <!--Add Alarm View Controller-->
+        <!--Edit Alarm-->
         <scene sceneID="HTj-VZ-elI">
             <objects>
-                <tableViewController id="TOI-0W-0nc" userLabel="Add Alarm View Controller" sceneMemberID="viewController">
+                <tableViewController id="TOI-0W-0nc" userLabel="Edit Alarm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="M33-RP-AgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +76,7 @@
                                                     <color key="backgroundColor" name="color-bg"/>
                                                 </imageView>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-jV-AjA">
-                                                    <rect key="frame" x="107" y="67" width="240" height="147"/>
+                                                    <rect key="frame" x="107" y="67" width="207" height="147"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -365,10 +365,10 @@
             </objects>
             <point key="canvasLocation" x="14431.884057971016" y="1654.6875"/>
         </scene>
-        <!--Upgrade Alarme-->
+        <!--Upgrade App-->
         <scene sceneID="k02-Pn-BSA">
             <objects>
-                <viewController id="Dcp-vZ-iMf" sceneMemberID="viewController">
+                <viewController id="Dcp-vZ-iMf" userLabel="Upgrade App" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-Pf-GdF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,13 +385,24 @@
             </objects>
             <point key="canvasLocation" x="12117" y="2401"/>
         </scene>
-        <!--About Alarme-->
+        <!--About App-->
         <scene sceneID="y7i-ka-ZVv">
             <objects>
-                <viewController id="Sx3-CF-EhA" sceneMemberID="viewController">
+                <viewController id="Sx3-CF-EhA" userLabel="About App" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjR-Ag-nvP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-Qd-ycv">
+                                <rect key="frame" x="20" y="140" width="374" height="722"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" name="color-bg"/>
                         <viewLayoutGuide key="safeArea" id="2Jq-Q4-VhC"/>
                     </view>
@@ -399,20 +410,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxu-gs-rAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12890" y="2401"/>
+            <point key="canvasLocation" x="12889.85507246377" y="2400.6696428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Privacy Policy-->
         <scene sceneID="yux-MV-mcL">
             <objects>
-                <viewController id="pb4-Vt-oep" sceneMemberID="viewController">
+                <viewController id="pb4-Vt-oep" userLabel="Privacy Policy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hvs-um-JQy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49n-Ny-xRd">
-                                <rect key="frame" x="20" y="20" width="374" height="788"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="color-bg"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -445,6 +456,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="color-bg"/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -589,6 +601,32 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                             </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1wh-Qp-7fZ">
+                                <rect key="frame" x="10" y="316" width="190" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z8n-Hf-oLG">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="options-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ezr-e9-ZEd">
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evasive snooze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-bN-WCy">
+                                            <rect key="frame" x="8" y="8" width="174" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" name="color-bg"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chevron.up.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XYq-LJ-bNQ">
+                                            <rect key="frame" x="55" y="53.333333333333485" width="80" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" name="color-bg"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="xf8-4u-ZAU" id="m2f-gQ-ko2"/>
@@ -601,10 +639,10 @@
             </objects>
             <point key="canvasLocation" x="15250.72463768116" y="2400.6696428571427"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="OPB-hs-2Mp">
             <objects>
-                <tableViewController id="IXy-kv-ejt" userLabel="Settings View Controller" sceneMemberID="viewController">
+                <tableViewController id="IXy-kv-ejt" customClass="SettingsTableViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="TFX-wD-vMn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,6 +669,9 @@
                                                     <rect key="frame" x="347" y="7" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="onTintColor" name="color-dark"/>
+                                                    <connections>
+                                                        <action selector="darkModeSwitchValueChanged:" destination="IXy-kv-ejt" eventType="valueChanged" id="d9h-wo-oqo"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -718,15 +759,18 @@ Made with ❤️ &amp; ☕️ in Toronto, Canada</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="2nI-Rt-jbH"/>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="rOv-NK-vhm" id="PSN-tG-DjY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BB-Sp-hBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12891" y="1655"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="MaE-GZ-Oxb">
             <objects>
-                <navigationController id="uTQ-Kb-CIV" sceneMemberID="viewController">
+                <navigationController id="uTQ-Kb-CIV" customClass="NavigationViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="mjH-Gd-tp8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -750,6 +794,7 @@ Made with ❤️ &amp; ☕️ in Toronto, Canada</string>
     <resources>
         <image name="alarm-bg" width="768" height="768"/>
         <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="chevron.up.square" catalog="system" width="128" height="114"/>
         <image name="circle-button" width="50" height="50"/>
         <image name="options-bg" width="200" height="128"/>
         <image name="oval-button" width="300" height="100"/>

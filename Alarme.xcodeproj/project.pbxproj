@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73877A93244F61F500E0297D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A92244F61F500E0297D /* Alarm.swift */; };
+		73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A95244F77B800E0297D /* SettingsTableViewController.swift */; };
+		73877A98244F830D00E0297D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A97244F830D00E0297D /* Constants.swift */; };
+		73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A9B244F8BB000E0297D /* NavigationViewController.swift */; };
 		73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */; };
 		73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */; };
+		73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */; };
+		73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */; };
 		73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */; };
 		73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */; };
 		73DEBBDF24253D22002B5EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDE24253D22002B5EE5 /* ViewController.swift */; };
@@ -19,8 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73877A92244F61F500E0297D /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		73877A95244F77B800E0297D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		73877A97244F830D00E0297D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		73877A9B244F8BB000E0297D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
 		73DEBBD724253D22002B5EE5 /* Alarme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +55,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		73CC1EAA243788DE009744F1 /* Views */ = {
+		73877A8E244F5AB500E0297D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73877A92244F61F500E0297D /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73877A8F244F5AC500E0297D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73DEBBDE24253D22002B5EE5 /* ViewController.swift */,
+				73877A95244F77B800E0297D /* SettingsTableViewController.swift */,
+				73877A9B244F8BB000E0297D /* NavigationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73877A90244F5D5800E0297D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */,
+				73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */,
+				73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */,
+				73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		73877A91244F5D8C00E0297D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				73DEBBE024253D22002B5EE5 /* Main.storyboard */,
-				73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */,
-				73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */,
+				73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */,
+				73DEBBE624253D23002B5EE5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73CC1EAA243788DE009744F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73877A90244F5D5800E0297D /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,13 +121,14 @@
 		73DEBBD924253D22002B5EE5 /* Alarme */ = {
 			isa = PBXGroup;
 			children = (
-				73CC1EAA243788DE009744F1 /* Views */,
 				73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */,
 				73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */,
-				73DEBBDE24253D22002B5EE5 /* ViewController.swift */,
-				73DEBBE624253D23002B5EE5 /* Assets.xcassets */,
-				73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */,
+				73877A97244F830D00E0297D /* Constants.swift */,
 				73DEBBEB24253D23002B5EE5 /* Info.plist */,
+				73877A8E244F5AB500E0297D /* Models */,
+				73CC1EAA243788DE009744F1 /* Views */,
+				73877A8F244F5AC500E0297D /* Controllers */,
+				73877A91244F5D8C00E0297D /* Resources */,
 				73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */,
 			);
 			path = Alarme;
@@ -142,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
 				73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */,
 				73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */,
@@ -160,7 +211,12 @@
 				73DEBBDF24253D22002B5EE5 /* ViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
+				73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */,
 				73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */,
+				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
+				73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */,
+				73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */,
+				73877A98244F830D00E0297D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

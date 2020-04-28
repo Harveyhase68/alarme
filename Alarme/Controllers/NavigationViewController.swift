@@ -12,14 +12,9 @@ class NavigationViewController: UINavigationController {
     
     override func viewDidLayoutSubviews() {
         
-        let isDarkMode = UserDefaults.standard.bool(forKey: Constants.isDarkMode)
+        let isDarkMode = K.defaults.bool(forKey: K.darkMode)
+        overrideUserInterfaceStyle = isDarkMode ? .dark : .light
         
-        switch isDarkMode {
-        case true:
-            overrideUserInterfaceStyle = .dark
-        case false:
-            overrideUserInterfaceStyle = .light
-        }
     }
     
 }

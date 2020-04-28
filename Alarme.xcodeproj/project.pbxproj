@@ -17,7 +17,6 @@
 		73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */; };
 		73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */; };
 		73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */; };
-		73DEBBDF24253D22002B5EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDE24253D22002B5EE5 /* ViewController.swift */; };
 		73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE024253D22002B5EE5 /* Main.storyboard */; };
 		73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */; };
 		73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE624253D23002B5EE5 /* Assets.xcassets */; };
@@ -36,7 +35,6 @@
 		73DEBBD724253D22002B5EE5 /* Alarme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73DEBBDE24253D22002B5EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73DEBBE124253D22002B5EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DEBBE424253D22002B5EE5 /* Alarme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alarme.xcdatamodel; sourceTree = "<group>"; };
 		73DEBBE624253D23002B5EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 		73877A8F244F5AC500E0297D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73DEBBDE24253D22002B5EE5 /* ViewController.swift */,
 				73877A95244F77B800E0297D /* SettingsTableViewController.swift */,
 				73877A9B244F8BB000E0297D /* NavigationViewController.swift */,
 			);
@@ -208,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */,
-				73DEBBDF24253D22002B5EE5 /* ViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
 				73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */,

@@ -12,31 +12,28 @@ class SettingsTableViewController: UITableViewController {
     
     @IBOutlet var darkModeSwitch: UISwitch!
     
-    let defaults = UserDefaults.standard
+    var isDarkMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Read the current switch state from UserDefaults
-        darkModeSwitch.isOn = defaults.bool(forKey: Constants.isDarkMode)
+        darkModeSwitch.isOn = K.defaults.bool(forKey: K.darkMode)
         // Implement new switch state immediately
         darkModeSwitchValueChanged(darkModeSwitch)
     }
     
     @IBAction func darkModeSwitchValueChanged(_ sender: UISwitch) {
-        switch darkModeSwitch.isOn {
-        case true:
+        isDarkMode = sender.isOn
+        updateStyle()
+    }
+    
+    func updateStyle() {
+        UIView.animate(withDuration: 0.4) {
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .dark
+                window.overrideUserInterfaceStyle = self.isDarkMode ? .dark : .light
             }
-            // Save the new state to UserDefaults
-            defaults.set(true, forKey: Constants.isDarkMode)
-        case false:
-            UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light
-            }
-            // Save the new state to UserDefaults
-            defaults.set(false, forKey: Constants.isDarkMode)
+            K.defaults.set(self.isDarkMode, forKey: K.darkMode)
         }
     }
     

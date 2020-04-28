@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct Constants {
-    static let isDarkMode = "isDarkMode"
+struct K {
+    static let darkMode = "isDarkMode"
+    static let defaults = UserDefaults.standard
 }

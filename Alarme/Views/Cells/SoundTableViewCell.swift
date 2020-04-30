@@ -8,17 +8,26 @@
 
 import UIKit
 
+protocol SoundTableViewCellDelegate {
+    func didTapPlayButton(soundName: String)
+}
+
 class SoundTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var playButton: UIButton!
+    
+    var soundItem: Sound!
+    var delegate: SoundTableViewCellDelegate?
+    
+    func setSound(sound: Sound) {
+        soundItem = sound
+        nameLabel.text = sound.name.replacingOccurrences(of: ".mp3", with: "")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        delegate?.didTapPlayButton(soundName: soundItem.name)
     }
+    
     
 }

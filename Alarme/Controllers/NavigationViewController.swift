@@ -11,10 +11,8 @@ import UIKit
 class NavigationViewController: UINavigationController {
     
     override func viewDidLayoutSubviews() {
-        
         let isDarkMode = K.defaults.bool(forKey: K.darkMode)
         overrideUserInterfaceStyle = isDarkMode ? .dark : .light
-        
     }
     
 }

@@ -16,12 +16,12 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Read the current switch state from UserDefaults
+        // Read the current switch state from UserDefaults and if the switch state has changed, implement the new style immediately
         darkModeSwitch.isOn = K.defaults.bool(forKey: K.darkMode)
-        // Implement new switch state immediately
         darkModeSwitchValueChanged(darkModeSwitch)
     }
+    
+    //MARK: - Style Preference
     
     @IBAction func darkModeSwitchValueChanged(_ sender: UISwitch) {
         isDarkMode = sender.isOn

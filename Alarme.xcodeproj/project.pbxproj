@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733EDC212458B3D20020AD96 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC202458B3D20020AD96 /* Sound.swift */; };
+		733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */; };
+		733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */; };
 		73877A93244F61F500E0297D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A92244F61F500E0297D /* Alarm.swift */; };
 		73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A95244F77B800E0297D /* SettingsTableViewController.swift */; };
 		73877A98244F830D00E0297D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A97244F830D00E0297D /* Constants.swift */; };
@@ -15,6 +18,16 @@
 		73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */; };
 		73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */; };
 		73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */; };
+		73D3CCC92459DCA40047E6C5 /* Banana Tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */; };
+		73D3CCCB2459DCB30047E6C5 /* Black Fedora.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */; };
+		73D3CCCD2459DCBC0047E6C5 /* Blugrass Billy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */; };
+		73D3CCCF2459DCC50047E6C5 /* Country Pickin'.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */; };
+		73D3CCD12459DCCD0047E6C5 /* Enchanting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */; };
+		73D3CCD32459DCD70047E6C5 /* Fields of Joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */; };
+		73D3CCD52459DCE00047E6C5 /* It Takes One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */; };
+		73D3CCD72459DCE80047E6C5 /* Make it Snappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */; };
+		73D3CCD92459DCF10047E6C5 /* Matador's Entry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */; };
+		73D3CCDB2459DCF90047E6C5 /* Mr. Mason.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */; };
 		73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */; };
 		73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */; };
 		73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE024253D22002B5EE5 /* Main.storyboard */; };
@@ -24,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		733EDC202458B3D20020AD96 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
 		73877A92244F61F500E0297D /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		73877A95244F77B800E0297D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		73877A97244F830D00E0297D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -32,6 +48,16 @@
 		73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
 		73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
+		73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Banana Tree.mp3"; sourceTree = "<group>"; };
+		73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Fedora.mp3"; sourceTree = "<group>"; };
+		73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Blugrass Billy.mp3"; sourceTree = "<group>"; };
+		73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Country Pickin'.mp3"; sourceTree = "<group>"; };
+		73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Enchanting.mp3; sourceTree = "<group>"; };
+		73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fields of Joy.mp3"; sourceTree = "<group>"; };
+		73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "It Takes One.mp3"; sourceTree = "<group>"; };
+		73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Make it Snappy.mp3"; sourceTree = "<group>"; };
+		73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Matador's Entry.mp3"; sourceTree = "<group>"; };
+		73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr. Mason.mp3"; sourceTree = "<group>"; };
 		73DEBBD724253D22002B5EE5 /* Alarme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				73877A92244F61F500E0297D /* Alarm.swift */,
+				733EDC202458B3D20020AD96 /* Sound.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -66,6 +93,8 @@
 			children = (
 				73877A95244F77B800E0297D /* SettingsTableViewController.swift */,
 				73877A9B244F8BB000E0297D /* NavigationViewController.swift */,
+				733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */,
+				733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,6 +113,7 @@
 		73877A91244F5D8C00E0297D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73D3CCC72459DC890047E6C5 /* Sounds */,
 				73DEBBE024253D22002B5EE5 /* Main.storyboard */,
 				73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */,
 				73DEBBE624253D23002B5EE5 /* Assets.xcassets */,
@@ -97,6 +127,23 @@
 				73877A90244F5D5800E0297D /* Cells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		73D3CCC72459DC890047E6C5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */,
+				73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */,
+				73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */,
+				73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */,
+				73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */,
+				73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */,
+				73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */,
+				73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */,
+				73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */,
+				73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		73DEBBCE24253D22002B5EE5 = {
@@ -189,11 +236,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D3CCC92459DCA40047E6C5 /* Banana Tree.mp3 in Resources */,
+				73D3CCDB2459DCF90047E6C5 /* Mr. Mason.mp3 in Resources */,
 				73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
+				73D3CCD72459DCE80047E6C5 /* Make it Snappy.mp3 in Resources */,
 				73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */,
+				73D3CCD32459DCD70047E6C5 /* Fields of Joy.mp3 in Resources */,
 				73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */,
+				73D3CCCF2459DCC50047E6C5 /* Country Pickin'.mp3 in Resources */,
+				73D3CCCB2459DCB30047E6C5 /* Black Fedora.mp3 in Resources */,
+				73D3CCD92459DCF10047E6C5 /* Matador's Entry.mp3 in Resources */,
 				73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */,
+				73D3CCD52459DCE00047E6C5 /* It Takes One.mp3 in Resources */,
+				73D3CCCD2459DCBC0047E6C5 /* Blugrass Billy.mp3 in Resources */,
+				73D3CCD12459DCCD0047E6C5 /* Enchanting.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,12 +262,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */,
+				733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
 				73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */,
 				73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */,
+				733EDC212458B3D20020AD96 /* Sound.swift in Sources */,
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
 				73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */,
+				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,
 				73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */,
 				73877A98244F830D00E0297D /* Constants.swift in Sources */,
 			);

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alarms-->
+        <!--Alarm List-->
         <scene sceneID="Tza-HU-zN1">
             <objects>
-                <tableViewController id="8iR-dY-evB" sceneMemberID="viewController">
+                <tableViewController id="8iR-dY-evB" userLabel="Alarm List" customClass="AlarmListTableViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KNA-mm-36N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +252,7 @@
                             </tableViewSection>
                             <tableViewSection id="uej-vb-Ath">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oDq-2K-XmO" detailTextLabel="sFz-Nb-vgr" rowHeight="44" style="IBUITableViewCellStyleValue1" id="Npg-Mf-uVF">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oDq-2K-XmO" detailTextLabel="sFz-Nb-vgr" style="IBUITableViewCellStyleValue1" id="Npg-Mf-uVF">
                                         <rect key="frame" x="0.0" y="397.66666603088379" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Npg-Mf-uVF" id="Kqq-ss-1av">
@@ -285,20 +285,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-KT-DKn">
-                                                    <rect key="frame" x="16" y="11.333333333333336" width="42" height="21"/>
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Add a label to your alarm" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-CW-p9I">
-                                                    <rect key="frame" x="88" y="10.666666666666664" width="306" height="22"/>
+                                                    <rect key="frame" x="92" y="10.666666666666664" width="302" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4Um-CW-p9I" firstAttribute="leading" secondItem="jjU-KT-DKn" secondAttribute="trailing" constant="30" id="0Cs-g1-Ysx"/>
-                                                <constraint firstItem="jjU-KT-DKn" firstAttribute="leading" secondItem="QRo-l8-n3e" secondAttribute="leading" constant="16" id="Nwx-ZE-bnj"/>
+                                                <constraint firstItem="jjU-KT-DKn" firstAttribute="leading" secondItem="QRo-l8-n3e" secondAttribute="leading" constant="20" id="Nwx-ZE-bnj"/>
                                                 <constraint firstItem="4Um-CW-p9I" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="OM7-uj-dKy"/>
                                                 <constraint firstItem="jjU-KT-DKn" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="ae2-oO-Ppb"/>
                                                 <constraint firstAttribute="trailing" secondItem="4Um-CW-p9I" secondAttribute="trailing" constant="20" id="b6w-9Q-eQg"/>
@@ -306,7 +306,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="il4-Kd-hQp" detailTextLabel="7nh-0N-Quc" rowHeight="43.5" style="IBUITableViewCellStyleValue1" id="WZV-tR-rze">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="il4-Kd-hQp" detailTextLabel="7nh-0N-Quc" style="IBUITableViewCellStyleValue1" id="WZV-tR-rze">
                                         <rect key="frame" x="0.0" y="485.16666603088379" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WZV-tR-rze" id="kL6-eq-3TR">
@@ -342,7 +342,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snooze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-qU-Xx4">
-                                                    <rect key="frame" x="16" y="11.333333333333336" width="329" height="21"/>
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="325" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -357,13 +357,13 @@
                                                 <constraint firstItem="xZY-qU-Xx4" firstAttribute="centerY" secondItem="872-C4-3J2" secondAttribute="centerY" id="FEd-8R-QR8"/>
                                                 <constraint firstItem="872-C4-3J2" firstAttribute="leading" secondItem="xZY-qU-Xx4" secondAttribute="trailing" id="rNL-CA-Rvy"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="872-C4-3J2" secondAttribute="trailing" id="vTs-oW-whW"/>
-                                                <constraint firstItem="xZY-qU-Xx4" firstAttribute="leading" secondItem="oIv-7N-3P0" secondAttribute="leading" constant="16" id="z9u-nn-eeT"/>
+                                                <constraint firstItem="xZY-qU-Xx4" firstAttribute="leading" secondItem="oIv-7N-3P0" secondAttribute="leading" constant="20" id="z9u-nn-eeT"/>
                                                 <constraint firstItem="xZY-qU-Xx4" firstAttribute="centerY" secondItem="oIv-7N-3P0" secondAttribute="centerY" id="zPj-cL-q6r"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B88-OI-z7i" detailTextLabel="DpD-US-2Dn" rowHeight="43.5" style="IBUITableViewCellStyleValue1" id="GOI-1B-ao8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B88-OI-z7i" detailTextLabel="DpD-US-2Dn" style="IBUITableViewCellStyleValue1" id="GOI-1B-ao8">
                                         <rect key="frame" x="0.0" y="572.16666603088379" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOI-1B-ao8" id="ZIO-W4-ZGy">
@@ -465,7 +465,7 @@
                             <outlet property="delegate" destination="TOI-0W-0nc" id="LfH-rk-cLW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Alarm" id="7Ji-I3-jP4"/>
+                    <navigationItem key="navigationItem" title="Edit Alarm" id="7Ji-I3-jP4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5D-qU-GO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -557,14 +557,14 @@
         <!--Sounds-->
         <scene sceneID="XFo-KN-nge">
             <objects>
-                <tableViewController id="ZY2-oK-f6a" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zUt-hV-uv8">
+                <tableViewController id="ZY2-oK-f6a" customClass="SoundListTableViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zUt-hV-uv8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="color-bg"/>
                         <color key="sectionIndexBackgroundColor" name="color-bg"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="UVa-3g-Td3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" rowHeight="43.666667938232422" id="UVa-3g-Td3">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UVa-3g-Td3" id="Mju-be-XId">
@@ -889,7 +889,7 @@
                         <sections>
                             <tableViewSection headerTitle="APPEARANCE" footerTitle="Switch between light and dark mode" id="2IP-mD-5rd">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="2i2-Dj-lm9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="2i2-Dj-lm9">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2i2-Dj-lm9" id="DfP-f0-rKi">
@@ -897,13 +897,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qz-Qn-jVR">
-                                                    <rect key="frame" x="20" y="11.666666666666664" width="115" height="21"/>
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="115" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOv-NK-vhm">
-                                                    <rect key="frame" x="345" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <rect key="frame" x="345" y="6.3333333333333321" width="51" height="30.999999999999996"/>
                                                     <color key="onTintColor" name="color-dark"/>
                                                     <connections>
                                                         <action selector="darkModeSwitchValueChanged:" destination="IXy-kv-ejt" eventType="valueChanged" id="d9h-wo-oqo"/>

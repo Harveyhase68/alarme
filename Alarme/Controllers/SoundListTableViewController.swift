@@ -14,7 +14,6 @@ class SoundListTableViewController: UITableViewController {
     var sounds: [Sound] = []
     var soundPlayer: AVAudioPlayer?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,11 +21,10 @@ class SoundListTableViewController: UITableViewController {
         // Hide excess cells in tableView
         tableView.tableFooterView = UIView()
         
-        createSoundsArray()
-        
+        populateSoundsArray()
     }
     
-    func createSoundsArray() {
+    func populateSoundsArray() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -37,24 +35,8 @@ class SoundListTableViewController: UITableViewController {
                 sounds.append(songName)
             }
         }
-        
-        print(sounds)
-        
-        
-//        let sound1 = Sound(name: "Banana Tree.mp3")
-//        let sound2 = Sound(name: "Black Fedora.mp3")
-//        let sound3 = Sound(name: "Enchanting.mp3")
-//        let sound4 = Sound(name: "Mr. Mason.mp3")
-//
-//        sounds.append(sound1)
-//        sounds.append(sound2)
-//        sounds.append(sound3)
-//        sounds.append(sound4)
-        
-
     }
     
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,6 +47,7 @@ class SoundListTableViewController: UITableViewController {
         let sound = sounds[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SoundTableViewCell
+        cell.playButton.tag = indexPath.row
         cell.setSound(sound: sound)
         cell.delegate = self
 
@@ -72,11 +55,8 @@ class SoundListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
     }
-
-
-
 
     /*
     // MARK: - Navigation
@@ -91,14 +71,29 @@ class SoundListTableViewController: UITableViewController {
 }
 
 extension SoundListTableViewController: SoundTableViewCellDelegate {
-    func didTapPlayButton(soundName: String) {
+    func didTapPlayButton(soundName: String, playButton: UIButton) {
         let path = Bundle.main.path(forResource: soundName, ofType: nil)!
         let url = URL(fileURLWithPath: path)
-        do {
-            soundPlayer = try AVAudioPlayer(contentsOf: url)
-            soundPlayer?.play()
-        } catch {
-            // Could not load sound file
+        
+        // let buttonRow = playButton.tag
+        // IF playButton.tag == song.id.isPlaying
+        //  THEN change image to play and stop the song
+        // ELSE
+        //  THEN change previous song.isPlaying image to play
+        //  also stop the previous song if it is still playing
+        //  and change the new song image to stop
+        
+        if soundPlayer?.isPlaying ?? false {
+            soundPlayer?.stop()
+            playButton.setImage(UIImage.init(systemName: "play.circle"), for: .normal)
+        } else {
+            do {
+                soundPlayer = try AVAudioPlayer(contentsOf: url)
+                soundPlayer?.play()
+                playButton.setImage(UIImage.init(systemName: "stop.circle"), for: .normal)
+            } catch {
+                print("Could not load sound file, \(error).")
+            }
         }
     }
 }

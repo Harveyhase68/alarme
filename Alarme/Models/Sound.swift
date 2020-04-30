@@ -10,6 +10,6 @@ import Foundation
 
 struct Sound {
     
-    var name: String
-    
+    let name: String
+
 }

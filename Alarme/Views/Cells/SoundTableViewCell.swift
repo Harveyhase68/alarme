@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SoundTableViewCellDelegate {
-    func didTapPlayButton(soundName: String)
+    func didTapPlayButton(soundName: String, playButton: UIButton)
 }
 
 class SoundTableViewCell: UITableViewCell {
@@ -26,8 +26,7 @@ class SoundTableViewCell: UITableViewCell {
     }
     
     @IBAction func playButtonTapped(_ sender: UIButton) {
-        delegate?.didTapPlayButton(soundName: soundItem.name)
+        delegate?.didTapPlayButton(soundName: soundItem.name, playButton: playButton)
     }
-    
     
 }

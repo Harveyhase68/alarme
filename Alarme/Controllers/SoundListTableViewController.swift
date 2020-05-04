@@ -11,8 +11,8 @@ import AVFoundation
 
 class SoundListTableViewController: UITableViewController {
     
-    var sounds: [Sound] = []
-    var soundPlayer: AVAudioPlayer?
+    var sounds = Sounds()
+    var soundManager = SoundManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +20,34 @@ class SoundListTableViewController: UITableViewController {
         tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: "songCell")
         // Hide excess cells in tableView
         tableView.tableFooterView = UIView()
-        
-        populateSoundsArray()
     }
     
-    func populateSoundsArray() {
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let items = try! fm.contentsOfDirectory(atPath: path)
-
-        for item in items {
-            if item.hasSuffix(".mp3") {
-                let songName = Sound(name: item)
-                sounds.append(songName)
+    func getViewIndexInTableView(tableView: UITableView, view: UIView) -> IndexPath? {
+        let position = view.convert(CGPoint.zero, to: tableView)
+        
+        return tableView.indexPathForRow(at: position)
+    }
+    
+    func changeButtonImage(for button: UIButton, play: Bool) {
+        UIView.transition(with: button,
+                          duration: 0.4,
+                          options: .transitionCrossDissolve,
+                          animations: {
+                            button.setImage(UIImage(systemName: play ? "play.circle.fill" : "stop.fill"), for: .normal)
+                            
+        }, completion: nil)
+    }
+    
+    func stopCurrentlyPlayingSound() {
+        if let currentSound = soundManager.currentlyPlaying() {
+            soundManager.stop()
+            if let indexStop = sounds.getPosition(currentSound) {
+                let cell = tableView.cellForRow(at: IndexPath(item: indexStop, section: 0)) as! SoundTableViewCell
+                changeButtonImage(for: cell.playButton, play: true)
             }
         }
     }
+    
     
     // MARK: - Table view data source
 
@@ -44,12 +56,11 @@ class SoundListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let sound = sounds[indexPath.row]
+        let sound = sounds.getSound(at: indexPath.row)!
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SoundTableViewCell
-        //cell.playButton.tag = indexPath.row
-        cell.setSound(sound: sound)
         cell.delegate = self
+        cell.setSound(sound: sound)
 
         return cell
     }
@@ -58,39 +69,33 @@ class SoundListTableViewController: UITableViewController {
 
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
 
+//MARK: - SoundTableViewCellDelegate
+
 extension SoundListTableViewController: SoundTableViewCellDelegate {
-    func didTapPlayButton(soundName: String, playButton: UIButton) {
-        let path = Bundle.main.path(forResource: soundName, ofType: nil)!
-        let url = URL(fileURLWithPath: path)
-        
-        //FIXME: Add method to remember the last playing song
-        //       When I press a button to play another song, what happens is the one that was playing, stops.
-        //       The image of the button of the song that was playing will remain as stop even if the song is already stopped.
-        //       If I press the button of the song that is playing, everything works fine. Only then.
-        
-        if soundPlayer?.isPlaying ?? false {
-            soundPlayer?.stop()
-            playButton.setImage(UIImage(systemName: "play"), for: .normal)
-        } else {
-            do {
-                soundPlayer = try AVAudioPlayer(contentsOf: url)
-                soundPlayer?.play()
-                playButton.setImage(UIImage(systemName: "stop.fill"), for: .normal)
-            } catch {
-                print("Could not load sound file, \(error).")
+    
+    func didTapPlayButton(playButton: UIButton) {
+        if let index = getViewIndexInTableView(tableView: tableView, view: playButton),
+            let sound = sounds.getSound(at: index.row) {
+            // If the sound is located in the same cell as the currently playing one - stop playing it and return
+            guard sound != soundManager.currentlyPlaying() else {
+                stopCurrentlyPlayingSound()
+                return
             }
+            // Stop any sound that is playing
+            stopCurrentlyPlayingSound()
+            // Start playing the new sound
+            soundManager.play(this: sound)
+            changeButtonImage(for: playButton, play: false)
         }
     }
+    
 }

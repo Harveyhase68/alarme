@@ -23,7 +23,7 @@
                             <constraint firstAttribute="width" constant="60" id="nhI-Mc-4R4"/>
                         </constraints>
                         <color key="tintColor" name="color-dark"/>
-                        <state key="normal" image="play" catalog="system">
+                        <state key="normal" image="play.circle.fill" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
                         </state>
                         <connections>
@@ -55,7 +55,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="color-bg">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

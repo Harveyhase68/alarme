@@ -47,7 +47,7 @@ class SoundListTableViewController: UITableViewController {
         let sound = sounds[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SoundTableViewCell
-        cell.playButton.tag = indexPath.row
+        //cell.playButton.tag = indexPath.row
         cell.setSound(sound: sound)
         cell.delegate = self
 
@@ -75,22 +75,19 @@ extension SoundListTableViewController: SoundTableViewCellDelegate {
         let path = Bundle.main.path(forResource: soundName, ofType: nil)!
         let url = URL(fileURLWithPath: path)
         
-        // let buttonRow = playButton.tag
-        // IF playButton.tag == song.id.isPlaying
-        //  THEN change image to play and stop the song
-        // ELSE
-        //  THEN change previous song.isPlaying image to play
-        //  also stop the previous song if it is still playing
-        //  and change the new song image to stop
+        //FIXME: Add method to remember the last playing song
+        //       When I press a button to play another song, what happens is the one that was playing, stops.
+        //       The image of the button of the song that was playing will remain as stop even if the song is already stopped.
+        //       If I press the button of the song that is playing, everything works fine. Only then.
         
         if soundPlayer?.isPlaying ?? false {
             soundPlayer?.stop()
-            playButton.setImage(UIImage.init(systemName: "play.circle"), for: .normal)
+            playButton.setImage(UIImage(systemName: "play"), for: .normal)
         } else {
             do {
                 soundPlayer = try AVAudioPlayer(contentsOf: url)
                 soundPlayer?.play()
-                playButton.setImage(UIImage.init(systemName: "stop.circle"), for: .normal)
+                playButton.setImage(UIImage(systemName: "stop.fill"), for: .normal)
             } catch {
                 print("Could not load sound file, \(error).")
             }

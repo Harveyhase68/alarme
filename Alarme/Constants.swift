@@ -16,6 +16,11 @@ struct K {
     static let playImage = "play.circle.fill"
     static let stopImage = "stop.fill"
     
+    struct Segue {
+        static let goToAlarmEdit = "goToAlarmEditScene"
+        static let goToSounds = "goToSoundsScene"
+    }
+    
     struct Sound {
         static let sound1 = "Mr. Mason"
         static let sound2 = "Matador's Entry"

@@ -22,6 +22,11 @@ class SoundListTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        soundManager.stop()
+    }
+    
     func getViewIndexInTableView(tableView: UITableView, view: UIView) -> IndexPath? {
         let position = view.convert(CGPoint.zero, to: tableView)
         
@@ -66,15 +71,52 @@ class SoundListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+            defer {
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        
+        let sound = sounds.getSound(at: indexPath.row)
+        performSegue(withIdentifier: K.Segue.goToAlarmEdit, sender: sound)
+//
+//            let post = posts[indexPath.row]
+//            performSegue(withIdentifier: "ShowProfileScreen", sender: post)
+        
+//        }
     }
 
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let destVC = segue.destination as! AlarmEditTableViewController
+        guard
+            let indexPath = tableView.indexPathForSelectedRow
+        else {
+            return
+        }
+        
+        let sound = sounds.getSound(at: indexPath.row)
+        destVC.selectedSound = sound
+        //soundManager.stop()
+        
+//        guard
+//            segue.identifier == "ShowProfileScreen",
+//            let indexPath = tableView.indexPathForSelectedRow,
+//            let profileViewController = segue.destination as? ProfileViewController
+//            else {
+//                return
+//        }
+//
+//        let post = posts[indexPath.row]
+//        for user in users {
+//            if post.userId == user.id {
+//                profileViewController.user = user
+//            }
+//        }
+        
+        
     }
+    
+    
 
 }
 

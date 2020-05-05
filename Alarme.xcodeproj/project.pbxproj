@@ -37,6 +37,7 @@
 		73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */; };
 		73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE624253D23002B5EE5 /* Assets.xcassets */; };
 		73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */; };
+		73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		73DEBBE624253D23002B5EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73DEBBE924253D23002B5EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73DEBBEB24253D23002B5EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				73877A9B244F8BB000E0297D /* NavigationViewController.swift */,
 				733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */,
 				733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */,
+				73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */,
 				733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */,
 				7368B77724606929009C68C4 /* ErrorManager.swift in Sources */,
+				73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
 				7368B775246068D8009C68C4 /* SoundManager.swift in Sources */,

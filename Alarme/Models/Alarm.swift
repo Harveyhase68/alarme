@@ -11,6 +11,7 @@ import UIKit
 
 struct Alarm {
 
+    var id: Int
     var time: Date
     var repeatDays: [String]
     var name: String

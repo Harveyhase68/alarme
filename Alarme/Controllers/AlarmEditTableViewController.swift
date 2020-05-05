@@ -15,7 +15,6 @@ class AlarmEditTableViewController: UITableViewController {
     
     @IBOutlet var soundLabel: UILabel!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

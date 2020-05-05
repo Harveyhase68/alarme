@@ -77,11 +77,6 @@ class SoundListTableViewController: UITableViewController {
         
         let sound = sounds.getSound(at: indexPath.row)
         performSegue(withIdentifier: K.Segue.goToAlarmEdit, sender: sound)
-//
-//            let post = posts[indexPath.row]
-//            performSegue(withIdentifier: "ShowProfileScreen", sender: post)
-        
-//        }
     }
 
     // MARK: - Navigation
@@ -96,24 +91,6 @@ class SoundListTableViewController: UITableViewController {
         
         let sound = sounds.getSound(at: indexPath.row)
         destVC.selectedSound = sound
-        //soundManager.stop()
-        
-//        guard
-//            segue.identifier == "ShowProfileScreen",
-//            let indexPath = tableView.indexPathForSelectedRow,
-//            let profileViewController = segue.destination as? ProfileViewController
-//            else {
-//                return
-//        }
-//
-//        let post = posts[indexPath.row]
-//        for user in users {
-//            if post.userId == user.id {
-//                profileViewController.user = user
-//            }
-//        }
-        
-        
     }
     
     

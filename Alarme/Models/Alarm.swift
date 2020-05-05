@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 struct Alarm {
-    
+
     var time: Date
     var repeatDays: [String]
     var name: String
     var sound: String
     var option: String
-    
+
     let backgroundImage: UIImage
-    
+
 }

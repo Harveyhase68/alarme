@@ -17,7 +17,7 @@ class SoundListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: "songCell")
+        tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: K.soundCell)
         // Hide excess cells in tableView
         tableView.tableFooterView = UIView()
     }
@@ -33,7 +33,7 @@ class SoundListTableViewController: UITableViewController {
                           duration: 0.4,
                           options: .transitionCrossDissolve,
                           animations: {
-                            button.setImage(UIImage(systemName: play ? "play.circle.fill" : "stop.fill"), for: .normal)
+                            button.setImage(UIImage(systemName: play ? K.playImage : K.stopImage), for: .normal)
                             
         }, completion: nil)
     }
@@ -58,7 +58,7 @@ class SoundListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sound = sounds.getSound(at: indexPath.row)!
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SoundTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.soundCell, for: indexPath) as! SoundTableViewCell
         cell.delegate = self
         cell.setSound(sound: sound)
 

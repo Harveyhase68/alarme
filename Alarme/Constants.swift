@@ -11,6 +11,10 @@ import Foundation
 struct K {
     static let darkMode = "isDarkMode"
     static let defaults = UserDefaults.standard
+    static let alarmCell = "alarmCell"
+    static let soundCell = "soundCell"
+    static let playImage = "play.circle.fill"
+    static let stopImage = "stop.fill"
     
     struct Sound {
         static let sound1 = "Mr. Mason"

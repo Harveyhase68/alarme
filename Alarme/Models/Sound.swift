@@ -9,7 +9,7 @@
 import Foundation
 
 struct Sound: Equatable {
-    
+
     let name: String
 
 }

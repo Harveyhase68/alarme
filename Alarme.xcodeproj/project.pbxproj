@@ -85,9 +85,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7340C4152461AFCD00322353 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7340C4162461B01500322353 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		7340C4172461B01C00322353 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		7340C4182461B02300322353 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		73877A8E244F5AB500E0297D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7340C4182461B02300322353 /* Error */,
+				7340C4172461B01C00322353 /* Alarm */,
+				7340C4162461B01500322353 /* Sound */,
 				73877A92244F61F500E0297D /* Alarm.swift */,
 				733EDC202458B3D20020AD96 /* Sound.swift */,
 				7368B774246068D8009C68C4 /* SoundManager.swift */,
@@ -178,11 +209,12 @@
 				73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */,
 				73877A97244F830D00E0297D /* Constants.swift */,
 				73DEBBEB24253D23002B5EE5 /* Info.plist */,
+				73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */,
 				73877A8E244F5AB500E0297D /* Models */,
 				73CC1EAA243788DE009744F1 /* Views */,
 				73877A8F244F5AC500E0297D /* Controllers */,
+				7340C4152461AFCD00322353 /* Extensions */,
 				73877A91244F5D8C00E0297D /* Resources */,
-				73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */,
 			);
 			path = Alarme;
 			sourceTree = "<group>";

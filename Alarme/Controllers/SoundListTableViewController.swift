@@ -54,7 +54,6 @@ class SoundListTableViewController: UITableViewController {
         }
     }
     
-    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,12 +95,13 @@ class SoundListTableViewController: UITableViewController {
 extension SoundListTableViewController: SoundTableViewCellDelegate {
     
     func didTapPlayButton(playButton: UIButton) {
+        
         if let index = getViewIndexInTableView(tableView: tableView, view: playButton),
             let sound = sounds.getSound(at: index.row) {
             // If the sound is located in the same cell as the currently playing one - stop playing it and return
             guard sound != soundManager.currentlyPlaying() else {
                 stopCurrentlyPlayingSound()
-                
+
                 return
             }
             // Stop any sound that is playing
@@ -109,6 +109,7 @@ extension SoundListTableViewController: SoundTableViewCellDelegate {
             // Start playing the new sound
             soundManager.play(this: sound)
             changeButtonImage(for: playButton, play: false)
+            
         }
     }
     

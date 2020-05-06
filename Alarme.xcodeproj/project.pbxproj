@@ -21,16 +21,16 @@
 		73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */; };
 		73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */; };
 		73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */; };
-		73D3CCC92459DCA40047E6C5 /* Banana Tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */; };
-		73D3CCCB2459DCB30047E6C5 /* Black Fedora.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */; };
-		73D3CCCD2459DCBC0047E6C5 /* Blugrass Billy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */; };
-		73D3CCCF2459DCC50047E6C5 /* Country Pickin'.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */; };
-		73D3CCD12459DCCD0047E6C5 /* Enchanting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */; };
-		73D3CCD32459DCD70047E6C5 /* Fields of Joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */; };
-		73D3CCD52459DCE00047E6C5 /* It Takes One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */; };
-		73D3CCD72459DCE80047E6C5 /* Make it Snappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */; };
-		73D3CCD92459DCF10047E6C5 /* Matador's Entry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */; };
-		73D3CCDB2459DCF90047E6C5 /* Mr. Mason.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */; };
+		73D8614D246330940001A3B1 /* It Takes One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86143246330920001A3B1 /* It Takes One.mp3 */; };
+		73D8614E246330940001A3B1 /* Blugrass Billy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86144246330920001A3B1 /* Blugrass Billy.mp3 */; };
+		73D8614F246330940001A3B1 /* Mr. Mason.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86145246330920001A3B1 /* Mr. Mason.mp3 */; };
+		73D86150246330940001A3B1 /* Enchanting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86146246330930001A3B1 /* Enchanting.mp3 */; };
+		73D86151246330940001A3B1 /* Make it Snappy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86147246330930001A3B1 /* Make it Snappy.mp3 */; };
+		73D86152246330940001A3B1 /* Matador's Entry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86148246330940001A3B1 /* Matador's Entry.mp3 */; };
+		73D86153246330940001A3B1 /* Banana Tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86149246330940001A3B1 /* Banana Tree.mp3 */; };
+		73D86154246330940001A3B1 /* Black Fedora.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8614A246330940001A3B1 /* Black Fedora.mp3 */; };
+		73D86155246330940001A3B1 /* Country Pickin'.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8614B246330940001A3B1 /* Country Pickin'.mp3 */; };
+		73D86156246330940001A3B1 /* Fields of Joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8614C246330940001A3B1 /* Fields of Joy.mp3 */; };
 		73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */; };
 		73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */; };
 		73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE024253D22002B5EE5 /* Main.storyboard */; };
@@ -55,16 +55,16 @@
 		73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
 		73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
-		73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Banana Tree.mp3"; sourceTree = "<group>"; };
-		73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Fedora.mp3"; sourceTree = "<group>"; };
-		73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Blugrass Billy.mp3"; sourceTree = "<group>"; };
-		73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Country Pickin'.mp3"; sourceTree = "<group>"; };
-		73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Enchanting.mp3; sourceTree = "<group>"; };
-		73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fields of Joy.mp3"; sourceTree = "<group>"; };
-		73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "It Takes One.mp3"; sourceTree = "<group>"; };
-		73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Make it Snappy.mp3"; sourceTree = "<group>"; };
-		73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Matador's Entry.mp3"; sourceTree = "<group>"; };
-		73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr. Mason.mp3"; sourceTree = "<group>"; };
+		73D86143246330920001A3B1 /* It Takes One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "It Takes One.mp3"; sourceTree = "<group>"; };
+		73D86144246330920001A3B1 /* Blugrass Billy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Blugrass Billy.mp3"; sourceTree = "<group>"; };
+		73D86145246330920001A3B1 /* Mr. Mason.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr. Mason.mp3"; sourceTree = "<group>"; };
+		73D86146246330930001A3B1 /* Enchanting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Enchanting.mp3; sourceTree = "<group>"; };
+		73D86147246330930001A3B1 /* Make it Snappy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Make it Snappy.mp3"; sourceTree = "<group>"; };
+		73D86148246330940001A3B1 /* Matador's Entry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Matador's Entry.mp3"; sourceTree = "<group>"; };
+		73D86149246330940001A3B1 /* Banana Tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Banana Tree.mp3"; sourceTree = "<group>"; };
+		73D8614A246330940001A3B1 /* Black Fedora.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Fedora.mp3"; sourceTree = "<group>"; };
+		73D8614B246330940001A3B1 /* Country Pickin'.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Country Pickin'.mp3"; sourceTree = "<group>"; };
+		73D8614C246330940001A3B1 /* Fields of Joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fields of Joy.mp3"; sourceTree = "<group>"; };
 		73DEBBD724253D22002B5EE5 /* Alarme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DEBBDA24253D22002B5EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DEBBDC24253D22002B5EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +97,9 @@
 		7340C4162461B01500322353 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				733EDC202458B3D20020AD96 /* Sound.swift */,
+				7368B77824607035009C68C4 /* Sounds.swift */,
+				7368B774246068D8009C68C4 /* SoundManager.swift */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -104,6 +107,7 @@
 		7340C4172461B01C00322353 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				73877A92244F61F500E0297D /* Alarm.swift */,
 			);
 			path = Alarm;
 			sourceTree = "<group>";
@@ -111,6 +115,7 @@
 		7340C4182461B02300322353 /* Error */ = {
 			isa = PBXGroup;
 			children = (
+				7368B77624606929009C68C4 /* ErrorManager.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -121,11 +126,6 @@
 				7340C4182461B02300322353 /* Error */,
 				7340C4172461B01C00322353 /* Alarm */,
 				7340C4162461B01500322353 /* Sound */,
-				73877A92244F61F500E0297D /* Alarm.swift */,
-				733EDC202458B3D20020AD96 /* Sound.swift */,
-				7368B774246068D8009C68C4 /* SoundManager.swift */,
-				7368B77624606929009C68C4 /* ErrorManager.swift */,
-				7368B77824607035009C68C4 /* Sounds.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,16 +175,16 @@
 		73D3CCC72459DC890047E6C5 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				73D3CCDA2459DCF90047E6C5 /* Mr. Mason.mp3 */,
-				73D3CCD82459DCF10047E6C5 /* Matador's Entry.mp3 */,
-				73D3CCD62459DCE80047E6C5 /* Make it Snappy.mp3 */,
-				73D3CCD42459DCE00047E6C5 /* It Takes One.mp3 */,
-				73D3CCD22459DCD70047E6C5 /* Fields of Joy.mp3 */,
-				73D3CCD02459DCCD0047E6C5 /* Enchanting.mp3 */,
-				73D3CCCE2459DCC50047E6C5 /* Country Pickin'.mp3 */,
-				73D3CCCC2459DCBC0047E6C5 /* Blugrass Billy.mp3 */,
-				73D3CCCA2459DCB30047E6C5 /* Black Fedora.mp3 */,
-				73D3CCC82459DCA40047E6C5 /* Banana Tree.mp3 */,
+				73D86149246330940001A3B1 /* Banana Tree.mp3 */,
+				73D8614A246330940001A3B1 /* Black Fedora.mp3 */,
+				73D86144246330920001A3B1 /* Blugrass Billy.mp3 */,
+				73D8614B246330940001A3B1 /* Country Pickin'.mp3 */,
+				73D86146246330930001A3B1 /* Enchanting.mp3 */,
+				73D8614C246330940001A3B1 /* Fields of Joy.mp3 */,
+				73D86143246330920001A3B1 /* It Takes One.mp3 */,
+				73D86147246330930001A3B1 /* Make it Snappy.mp3 */,
+				73D86148246330940001A3B1 /* Matador's Entry.mp3 */,
+				73D86145246330920001A3B1 /* Mr. Mason.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -280,21 +280,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D3CCC92459DCA40047E6C5 /* Banana Tree.mp3 in Resources */,
-				73D3CCDB2459DCF90047E6C5 /* Mr. Mason.mp3 in Resources */,
+				73D86155246330940001A3B1 /* Country Pickin'.mp3 in Resources */,
 				73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
-				73D3CCD72459DCE80047E6C5 /* Make it Snappy.mp3 in Resources */,
+				73D86154246330940001A3B1 /* Black Fedora.mp3 in Resources */,
+				73D86153246330940001A3B1 /* Banana Tree.mp3 in Resources */,
 				73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */,
-				73D3CCD32459DCD70047E6C5 /* Fields of Joy.mp3 in Resources */,
+				73D86150246330940001A3B1 /* Enchanting.mp3 in Resources */,
+				73D8614D246330940001A3B1 /* It Takes One.mp3 in Resources */,
+				73D8614E246330940001A3B1 /* Blugrass Billy.mp3 in Resources */,
+				73D86152246330940001A3B1 /* Matador's Entry.mp3 in Resources */,
+				73D86151246330940001A3B1 /* Make it Snappy.mp3 in Resources */,
 				73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */,
-				73D3CCCF2459DCC50047E6C5 /* Country Pickin'.mp3 in Resources */,
-				73D3CCCB2459DCB30047E6C5 /* Black Fedora.mp3 in Resources */,
-				73D3CCD92459DCF10047E6C5 /* Matador's Entry.mp3 in Resources */,
+				73D8614F246330940001A3B1 /* Mr. Mason.mp3 in Resources */,
+				73D86156246330940001A3B1 /* Fields of Joy.mp3 in Resources */,
 				73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */,
-				73D3CCD52459DCE00047E6C5 /* It Takes One.mp3 in Resources */,
-				73D3CCCD2459DCBC0047E6C5 /* Blugrass Billy.mp3 in Resources */,
-				73D3CCD12459DCCD0047E6C5 /* Enchanting.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

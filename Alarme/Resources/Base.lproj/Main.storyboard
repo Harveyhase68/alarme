@@ -70,10 +70,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-bg" translatesAutoresizingMaskIntoConstraints="NO" id="ASK-Cn-URH">
-                                                    <rect key="frame" x="77.333333333333343" y="5" width="259.33333333333326" height="250"/>
+                                                    <rect key="frame" x="79.666666666666671" y="5" width="254.66666666666663" height="250"/>
                                                     <color key="backgroundColor" name="color-bg"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="ASK-Cn-URH" secondAttribute="height" multiplier="28:27" id="MmQ-MZ-1jx"/>
+                                                        <constraint firstAttribute="width" secondItem="ASK-Cn-URH" secondAttribute="height" multiplier="28:27.5" id="MmQ-MZ-1jx"/>
                                                     </constraints>
                                                 </imageView>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-jV-AjA">
@@ -298,7 +298,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4Um-CW-p9I" firstAttribute="leading" secondItem="jjU-KT-DKn" secondAttribute="trailing" constant="30" id="0Cs-g1-Ysx"/>
-                                                <constraint firstItem="jjU-KT-DKn" firstAttribute="leading" secondItem="QRo-l8-n3e" secondAttribute="leading" constant="20" id="Nwx-ZE-bnj"/>
+                                                <constraint firstItem="jjU-KT-DKn" firstAttribute="leading" secondItem="QRo-l8-n3e" secondAttribute="leadingMargin" id="Nwx-ZE-bnj"/>
                                                 <constraint firstItem="4Um-CW-p9I" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="OM7-uj-dKy"/>
                                                 <constraint firstItem="jjU-KT-DKn" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="ae2-oO-Ppb"/>
                                                 <constraint firstAttribute="trailing" secondItem="4Um-CW-p9I" secondAttribute="trailing" constant="20" id="b6w-9Q-eQg"/>
@@ -320,8 +320,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Eye of the Tiger" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7nh-0N-Quc">
-                                                    <rect key="frame" x="254.33333333333329" y="11.999999999999998" width="120.66666666666667" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Make it Snappy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7nh-0N-Quc">
+                                                    <rect key="frame" x="257.66666666666669" y="11.999999999999998" width="117.33333333333333" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -357,7 +357,7 @@
                                                 <constraint firstItem="xZY-qU-Xx4" firstAttribute="centerY" secondItem="872-C4-3J2" secondAttribute="centerY" id="FEd-8R-QR8"/>
                                                 <constraint firstItem="872-C4-3J2" firstAttribute="leading" secondItem="xZY-qU-Xx4" secondAttribute="trailing" id="rNL-CA-Rvy"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="872-C4-3J2" secondAttribute="trailing" id="vTs-oW-whW"/>
-                                                <constraint firstItem="xZY-qU-Xx4" firstAttribute="leading" secondItem="oIv-7N-3P0" secondAttribute="leading" constant="20" id="z9u-nn-eeT"/>
+                                                <constraint firstItem="xZY-qU-Xx4" firstAttribute="leading" secondItem="oIv-7N-3P0" secondAttribute="leadingMargin" id="z9u-nn-eeT"/>
                                                 <constraint firstItem="xZY-qU-Xx4" firstAttribute="centerY" secondItem="oIv-7N-3P0" secondAttribute="centerY" id="zPj-cL-q6r"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -388,7 +388,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
                                         <connections>
-                                            <segue destination="SoL-9g-CEd" kind="show" id="WbI-W4-LYY"/>
+                                            <segue destination="SoL-9g-CEd" kind="show" identifier="goToOptionsScene" id="WbI-W4-LYY"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

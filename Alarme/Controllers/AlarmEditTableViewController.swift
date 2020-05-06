@@ -17,7 +17,7 @@ class AlarmEditTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     func updatedSelectedSoundName() {
@@ -30,5 +30,6 @@ class AlarmEditTableViewController: UITableViewController {
     @IBAction func unwindToAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
         updatedSelectedSoundName()
     }
-
+    
 }
+

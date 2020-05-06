@@ -30,9 +30,12 @@ struct Sounds {
             Sound(name: K.Sound.sound9),
             Sound(name: K.Sound.sound10)]
     }
-
+    
     func getSound(at position: Int) -> Sound? {
-        guard 0...(sounds.count - 1) ~= position else { return nil }
+        guard 0...(sounds.count - 1) ~= position else {
+            return nil
+        }
+        
         return sounds[position]
     }
     

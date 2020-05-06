@@ -19,6 +19,7 @@ struct K {
     struct Segue {
         static let goToAlarmEdit = "goToAlarmEditScene"
         static let goToSounds = "goToSoundsScene"
+        static let goToOptions = "goToOptionsScene"
     }
     
     struct Sound {

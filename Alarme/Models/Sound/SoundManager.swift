@@ -17,11 +17,13 @@ struct SoundManager {
     func currentlyPlaying() -> Sound? {
         return sound
     }
-
+    
     mutating func play(this sound: Sound) {
         stop()
         do {
-            guard let url = Bundle.main.url(forResource: sound.name, withExtension: ".mp3") else { return }
+            guard let url = Bundle.main.url(forResource: sound.name, withExtension: ".mp3") else {
+                return
+            }
             player = try AVAudioPlayer(contentsOf: url)
             player?.play()
             self.sound = sound

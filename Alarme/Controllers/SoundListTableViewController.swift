@@ -17,15 +17,18 @@ class SoundListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: K.soundCell)
-        // Hide excess cells in tableView
-        tableView.tableFooterView = UIView()
+        configureTableView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         
         soundManager.stop()
+    }
+    
+    fileprivate func configureTableView() {
+        tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: K.soundCell)
+        tableView.hideEmptyCells()
     }
     
     func getViewIndexInTableView(tableView: UITableView, view: UIView) -> IndexPath? {
@@ -90,7 +93,7 @@ class SoundListTableViewController: UITableViewController {
     
 }
 
-//MARK: - SoundTableViewCell delegate
+//MARK: - Sound table view cell delegate
 
 extension SoundListTableViewController: SoundTableViewCellDelegate {
     

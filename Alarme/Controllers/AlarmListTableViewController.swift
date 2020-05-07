@@ -12,9 +12,12 @@ class AlarmListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Hide excess cells in tableView
-        tableView.tableFooterView = UIView()
         
+        configureTableView()
+    }
+    
+    fileprivate func configureTableView() {
+        tableView.hideEmptyCells()
     }
 
     // MARK: - Table view data source

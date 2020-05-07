@@ -9,6 +9,8 @@
 import UIKit
 
 class AlarmListTableViewController: UITableViewController {
+    
+    var tempArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +18,20 @@ class AlarmListTableViewController: UITableViewController {
         configureTableView()
     }
     
-    fileprivate func configureTableView() {
+    func configureTableView() {
         tableView.hideEmptyCells()
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if tempArray.count == 0 {
+            self.tableView.showEmptyMessage(as: UIImage(named: "funny-no-alarm-temp")!)
+        } else {
+            self.tableView.restoreToNormalState()
+        }
+        
+        return tempArray.count
     }
 
 

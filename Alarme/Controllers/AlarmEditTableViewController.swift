@@ -14,11 +14,16 @@ class AlarmEditTableViewController: UITableViewController {
     var selectedSound: Sound?
     
     @IBOutlet var soundLabel: UILabel!
+    @IBOutlet var optionLabel: UILabel!
+    @IBOutlet var snoozeSwitch: UISwitch!
+    @IBOutlet var optionCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    //MARK: - Sound methods
     
     func updatedSelectedSoundName() {
         if let selectedSound = selectedSound,
@@ -29,6 +34,22 @@ class AlarmEditTableViewController: UITableViewController {
     
     @IBAction func unwindToAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
         updatedSelectedSoundName()
+    }
+    
+    //MARK: - Snooze methods
+    
+    @IBAction func snoozeSwitchValueChanged(_ sender: UISwitch) {
+        hideOptionCellFromTableView()
+        //tableView.reloadData()
+    }
+    
+    func hideOptionCellFromTableView() {
+        if snoozeSwitch.isOn {
+            optionCell.isHidden = true
+        } else {
+            optionCell.isHidden = false
+        }
+        
     }
     
 }

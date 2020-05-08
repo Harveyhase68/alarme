@@ -351,6 +351,9 @@
                                                     <rect key="frame" x="345" y="6.3333333333333321" width="51" height="30.999999999999996"/>
                                                     <color key="tintColor" name="color-dark"/>
                                                     <color key="onTintColor" name="color-dark"/>
+                                                    <connections>
+                                                        <action selector="snoozeSwitchValueChanged:" destination="TOI-0W-0nc" eventType="valueChanged" id="141-O4-4P8"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -467,6 +470,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Alarm" id="7Ji-I3-jP4"/>
                     <connections>
+                        <outlet property="optionCell" destination="GOI-1B-ao8" id="gx3-pC-uC8"/>
+                        <outlet property="optionLabel" destination="DpD-US-2Dn" id="kmk-gD-c01"/>
+                        <outlet property="snoozeSwitch" destination="872-C4-3J2" id="zWO-wI-Eoc"/>
                         <outlet property="soundLabel" destination="7nh-0N-Quc" id="ued-8F-qm2"/>
                     </connections>
                 </tableViewController>

@@ -18,7 +18,6 @@ extension UITableView {
         
         self.backgroundView = imageView
         self.separatorStyle = .none
-        
         self.isScrollEnabled = false
     }
     

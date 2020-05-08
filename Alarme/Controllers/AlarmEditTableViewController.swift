@@ -12,15 +12,21 @@ class AlarmEditTableViewController: UITableViewController {
     
     var alarm: Alarm?
     var selectedSound: Sound?
+    let keyboardManager = KeyboardManager()
     
     @IBOutlet var soundLabel: UILabel!
     @IBOutlet var optionLabel: UILabel!
     @IBOutlet var snoozeSwitch: UISwitch!
     @IBOutlet var optionCell: UITableViewCell!
+    @IBOutlet var alarmLabelTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        alarmLabelTextField.delegate = self
+        keyboardManager.dismissKeyboardOnScroll(on: self.tableView)
+        keyboardManager.dismissKeyboardOnTapAnywhere(on: self.view)
+
     }
     
     //MARK: - Sound methods
@@ -40,7 +46,6 @@ class AlarmEditTableViewController: UITableViewController {
     
     @IBAction func snoozeSwitchValueChanged(_ sender: UISwitch) {
         hideOptionCellFromTableView()
-        //tableView.reloadData()
     }
     
     func hideOptionCellFromTableView() {
@@ -49,8 +54,6 @@ class AlarmEditTableViewController: UITableViewController {
         } else {
             optionCell.isHidden = false
         }
-        
     }
     
 }
-

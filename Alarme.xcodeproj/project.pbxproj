@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */; };
 		733EDC212458B3D20020AD96 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC202458B3D20020AD96 /* Sound.swift */; };
 		733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */; };
 		733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		733EDC202458B3D20020AD96 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				7340C4182461B02300322353 /* Error */,
 				7340C4172461B01C00322353 /* Alarm */,
 				7340C4162461B01500322353 /* Sound */,
+				7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */,
 				73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */,
 				733EDC212458B3D20020AD96 /* Sound.swift in Sources */,
+				7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */,
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
 				73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */,
 				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,

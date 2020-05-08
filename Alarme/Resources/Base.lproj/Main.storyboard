@@ -285,13 +285,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-KT-DKn">
-                                                    <rect key="frame" x="20" y="11.333333333333336" width="42" height="21"/>
+                                                    <rect key="frame" x="19.999999999999996" y="11.333333333333336" width="41.666666666666657" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Add a label to your alarm" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-CW-p9I">
-                                                    <rect key="frame" x="92" y="10.666666666666664" width="302" height="22"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" placeholder="Add a label to your alarm" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-CW-p9I">
+                                                    <rect key="frame" x="91.666666666666657" y="10.666666666666664" width="302.33333333333337" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
@@ -470,6 +470,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Alarm" id="7Ji-I3-jP4"/>
                     <connections>
+                        <outlet property="alarmLabelTextField" destination="4Um-CW-p9I" id="Pkj-X9-F2x"/>
                         <outlet property="optionCell" destination="GOI-1B-ao8" id="gx3-pC-uC8"/>
                         <outlet property="optionLabel" destination="DpD-US-2Dn" id="kmk-gD-c01"/>
                         <outlet property="snoozeSwitch" destination="872-C4-3J2" id="zWO-wI-Eoc"/>

@@ -14,7 +14,9 @@ Alarme is just another iOS alarm application with an option to snooze the alarm,
 
 The main feature of Alarme is the option to turn the Snooze button off and instead of snoozing the alarm, user is presented with 5 different options to turn the alarm off once it goes off.
 
-|      | Options to Turn Off the alarm     |
+<br />
+
+|      | Options to Turn off the alarm     |
 |---                  |---   |
 | Take a picture                   | Take a picture of any object when setting the alarm. Once the alarm goes off, turn the alarm off only by taking a picture of the same object.  |
 | Scan a QR code                  | Scan a QR code when setting the alarm. Once the alarm goes off, scan the same QR code to turn it off. |
@@ -31,7 +33,6 @@ The main feature of Alarme is the option to turn the Snooze button off and inste
 * Data persistence using Core Data
 * TBD
 
----
 
 ### TO-DO:
 

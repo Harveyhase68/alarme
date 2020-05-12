@@ -15,12 +15,12 @@ Alarme is just another iOS alarm application with an option to snooze the alarm,
 The main feature of Alarme is the option to turn the Snooze button off and instead of snoozing the alarm, user is presented with 5 different options to turn the alarm off once it goes off.
 
 |      | Options to Turn Off the alarm     |
-|---    |---   |
-| Take a picture         | Take a picture of any object when setting the alarm. Once the alarm goes off, user can turn the alarm off only by taking a picture of the same object.  |
-| Scan a QR code     | Scan a QR code when setting the alarm. Once the alarm goes off, scan the same QR code to turn it off. |
-| Solve a problem     | Solve a mathematical problem to turn the alarm off. |
-| Shake your phone  | Shake your phone designated number of times to turn the alarm off. |
-| Evasive shutdown      | Simply press a turn-off button with your finger, but first try to catch it while it's jumping on your screen from one point to another, randomly. |
+|---                  |---   |
+| Take a picture                   | Take a picture of any object when setting the alarm. Once the alarm goes off, user can turn the alarm off only by taking a picture of the same object.  |
+| Scan a QR code                  | Scan a QR code when setting the alarm. Once the alarm goes off, scan the same QR code to turn it off. |
+| Solve a problem                     | Solve a mathematical problem to turn the alarm off. |
+| Shake your phone               | Shake your phone designated number of times to turn the alarm off. |
+| Evasive button                     | Simply press a turn-off button with your finger, but first try to catch it while it's jumping on your screen from one point to another, randomly. |
 
 
 ## Concepts used

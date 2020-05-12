@@ -669,7 +669,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nW1-rM-ijd">
                                                 <rect key="frame" x="0.0" y="288.66666666666669" width="394" height="144.66666666666669"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-U0-vvt" userLabel="Evasive Snooze View">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-U0-vvt" userLabel="Evasive Button View">
                                                         <rect key="frame" x="0.0" y="0.0" width="194.66666666666666" height="144.66666666666666"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-qA-zgS">
@@ -684,7 +684,7 @@
                                                             <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-uf-sq4">
                                                                 <rect key="frame" x="5" y="5.0000000000000071" width="184.66666666666666" height="124.66666666666669"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evasive snooze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-bN-WCy">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evasive button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-bN-WCy">
                                                                         <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="48.666666666666664"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                         <color key="textColor" name="color-bg"/>

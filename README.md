@@ -16,11 +16,11 @@ The main feature of Alarme is the option to turn the Snooze button off and inste
 
 |      | Options to Turn Off the alarm     |
 |---                  |---   |
-| Take a picture                   | Take a picture of any object when setting the alarm. Once the alarm goes off, user can turn the alarm off only by taking a picture of the same object.  |
+| Take a picture                   | Take a picture of any object when setting the alarm. Once the alarm goes off, turn the alarm off only by taking a picture of the same object.  |
 | Scan a QR code                  | Scan a QR code when setting the alarm. Once the alarm goes off, scan the same QR code to turn it off. |
 | Solve a problem                     | Solve a mathematical problem to turn the alarm off. |
-| Shake your phone               | Shake your phone designated number of times to turn the alarm off. |
-| Evasive button                     | Simply press a turn-off button with your finger, but first try to catch it while it's jumping on your screen from one point to another, randomly. |
+| Shake your phone               | Shake the phone designated number of times to turn the alarm off. |
+| Evasive button                     | Simply press a turn-off button, but first try to catch it while it's jumping on the screen from one point to another, randomly. |
 
 
 ## Concepts used
@@ -28,6 +28,8 @@ The main feature of Alarme is the option to turn the Snooze button off and inste
 * MVC Design Pattern
 * In-app dark mode switch with UserDefaults
 * Privacy Policy view using WebKit
+* Data persistence using Core Data
+* TBD
 
 ---
 

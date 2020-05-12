@@ -100,151 +100,12 @@
                             </tableViewSection>
                             <tableViewSection id="wRn-Wl-edu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="xwa-l7-bET">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="repeatDaysCell" rowHeight="50" id="xwa-l7-bET">
                                         <rect key="frame" x="0.0" y="312.66666603088379" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwa-l7-bET" id="DpC-BH-3J9">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RvV-oE-sg5">
-                                                    <rect key="frame" x="30" y="0.0" width="354" height="50"/>
-                                                    <subviews>
-                                                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03L-Kt-W58" userLabel="Mon">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-f9-Zyn">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="cVi-f9-Zyn" secondAttribute="height" multiplier="1:1" id="V8i-Z1-ghr"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="M" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="cVi-f9-Zyn" firstAttribute="leading" secondItem="03L-Kt-W58" secondAttribute="leading" id="3DN-sH-qjS"/>
-                                                                <constraint firstItem="cVi-f9-Zyn" firstAttribute="centerY" secondItem="03L-Kt-W58" secondAttribute="centerY" id="vVc-lE-IxT"/>
-                                                                <constraint firstItem="cVi-f9-Zyn" firstAttribute="centerX" secondItem="03L-Kt-W58" secondAttribute="centerX" id="xgK-pa-Ejw"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRD-lw-Isu" userLabel="Tue">
-                                                            <rect key="frame" x="52" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J68-wh-O3P">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="J68-wh-O3P" secondAttribute="height" multiplier="1:1" id="Pbr-qh-UgX"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="T" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="J68-wh-O3P" firstAttribute="centerY" secondItem="qRD-lw-Isu" secondAttribute="centerY" id="0hD-ay-M0m"/>
-                                                                <constraint firstItem="J68-wh-O3P" firstAttribute="centerX" secondItem="qRD-lw-Isu" secondAttribute="centerX" id="Jkb-XJ-nWr"/>
-                                                                <constraint firstItem="J68-wh-O3P" firstAttribute="leading" secondItem="qRD-lw-Isu" secondAttribute="leading" id="gt4-0j-HYu"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4t-Xf-hKC" userLabel="Wed">
-                                                            <rect key="frame" x="104" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-of-t2H">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="a3S-of-t2H" secondAttribute="height" multiplier="1:1" id="vES-tx-Goc"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="W" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="a3S-of-t2H" firstAttribute="centerX" secondItem="S4t-Xf-hKC" secondAttribute="centerX" id="3us-ei-N4E"/>
-                                                                <constraint firstItem="a3S-of-t2H" firstAttribute="leading" secondItem="S4t-Xf-hKC" secondAttribute="leading" id="Yug-zy-nq8"/>
-                                                                <constraint firstItem="a3S-of-t2H" firstAttribute="centerY" secondItem="S4t-Xf-hKC" secondAttribute="centerY" id="ZO5-TQ-Jpa"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YG6-Kn-pmn" userLabel="Thu">
-                                                            <rect key="frame" x="156" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-3g-dtA">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="hZt-3g-dtA" secondAttribute="height" multiplier="1:1" id="6L4-mr-Pck"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="T" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="hZt-3g-dtA" firstAttribute="centerX" secondItem="YG6-Kn-pmn" secondAttribute="centerX" id="XMX-rR-8mK"/>
-                                                                <constraint firstItem="hZt-3g-dtA" firstAttribute="leading" secondItem="YG6-Kn-pmn" secondAttribute="leading" id="gSo-Qp-qrE"/>
-                                                                <constraint firstItem="hZt-3g-dtA" firstAttribute="centerY" secondItem="YG6-Kn-pmn" secondAttribute="centerY" id="sH6-Dr-JdR"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uU-Og-rw3" userLabel="Fri">
-                                                            <rect key="frame" x="208" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-Lu-uKb">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="q1d-Lu-uKb" secondAttribute="height" multiplier="1:1" id="LJb-U0-E2E"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="F" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="q1d-Lu-uKb" firstAttribute="centerY" secondItem="8uU-Og-rw3" secondAttribute="centerY" id="Jlh-6G-BKs"/>
-                                                                <constraint firstItem="q1d-Lu-uKb" firstAttribute="leading" secondItem="8uU-Og-rw3" secondAttribute="leading" id="Up1-GC-5SR"/>
-                                                                <constraint firstItem="q1d-Lu-uKb" firstAttribute="centerX" secondItem="8uU-Og-rw3" secondAttribute="centerX" id="lmV-lB-crZ"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvQ-MM-BLN" userLabel="Sat">
-                                                            <rect key="frame" x="260" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-aq-CRK">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="aCO-aq-CRK" secondAttribute="height" multiplier="1:1" id="ncK-iq-hOG"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="S" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="aCO-aq-CRK" firstAttribute="centerX" secondItem="yvQ-MM-BLN" secondAttribute="centerX" id="fyP-ID-ktN"/>
-                                                                <constraint firstItem="aCO-aq-CRK" firstAttribute="centerY" secondItem="yvQ-MM-BLN" secondAttribute="centerY" id="l4k-Lj-veo"/>
-                                                                <constraint firstItem="aCO-aq-CRK" firstAttribute="leading" secondItem="yvQ-MM-BLN" secondAttribute="leading" id="zf7-hf-Ldr"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUl-Rr-hTV" userLabel="Sun">
-                                                            <rect key="frame" x="312" y="0.0" width="42" height="50"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpS-qX-woh">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="lpS-qX-woh" secondAttribute="height" multiplier="1:1" id="ezm-DZ-2F7"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                                    <state key="normal" title="S" backgroundImage="circle-button"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="lpS-qX-woh" firstAttribute="centerX" secondItem="DUl-Rr-hTV" secondAttribute="centerX" id="4iw-Fq-AKv"/>
-                                                                <constraint firstItem="lpS-qX-woh" firstAttribute="centerY" secondItem="DUl-Rr-hTV" secondAttribute="centerY" id="ucF-gv-smh"/>
-                                                                <constraint firstItem="lpS-qX-woh" firstAttribute="leading" secondItem="DUl-Rr-hTV" secondAttribute="leading" id="we3-MB-Qff"/>
-                                                            </constraints>
-                                                        </view>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="RvV-oE-sg5" firstAttribute="leading" secondItem="DpC-BH-3J9" secondAttribute="leading" constant="30" id="B6T-5j-9bP"/>
-                                                <constraint firstItem="RvV-oE-sg5" firstAttribute="top" secondItem="DpC-BH-3J9" secondAttribute="top" id="NiT-Gh-pur"/>
-                                                <constraint firstAttribute="trailing" secondItem="RvV-oE-sg5" secondAttribute="trailing" constant="30" id="hSh-XT-sC7"/>
-                                                <constraint firstAttribute="bottom" secondItem="RvV-oE-sg5" secondAttribute="bottom" id="nFk-Xq-fMQ"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
@@ -285,23 +146,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-KT-DKn">
-                                                    <rect key="frame" x="19.999999999999996" y="11.333333333333336" width="41.666666666666657" height="21"/>
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" placeholder="Add a label to your alarm" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-CW-p9I">
-                                                    <rect key="frame" x="91.666666666666657" y="10.666666666666664" width="302.33333333333337" height="22"/>
+                                                    <rect key="frame" x="62" y="10.666666666666664" width="332" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4Um-CW-p9I" firstAttribute="leading" secondItem="jjU-KT-DKn" secondAttribute="trailing" constant="30" id="0Cs-g1-Ysx"/>
+                                                <constraint firstItem="4Um-CW-p9I" firstAttribute="leading" secondItem="jjU-KT-DKn" secondAttribute="trailing" id="0Cs-g1-Ysx"/>
                                                 <constraint firstItem="jjU-KT-DKn" firstAttribute="leading" secondItem="QRo-l8-n3e" secondAttribute="leadingMargin" id="Nwx-ZE-bnj"/>
                                                 <constraint firstItem="4Um-CW-p9I" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="OM7-uj-dKy"/>
                                                 <constraint firstItem="jjU-KT-DKn" firstAttribute="centerY" secondItem="QRo-l8-n3e" secondAttribute="centerY" id="ae2-oO-Ppb"/>
-                                                <constraint firstAttribute="trailing" secondItem="4Um-CW-p9I" secondAttribute="trailing" constant="20" id="b6w-9Q-eQg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4Um-CW-p9I" secondAttribute="trailing" id="b6w-9Q-eQg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
@@ -925,7 +786,7 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rOv-NK-vhm" firstAttribute="leading" secondItem="8Qz-Qn-jVR" secondAttribute="trailing" constant="210" id="I8m-Fv-jPH"/>
+                                                <constraint firstItem="rOv-NK-vhm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8Qz-Qn-jVR" secondAttribute="trailing" constant="210" id="I8m-Fv-jPH"/>
                                                 <constraint firstItem="8Qz-Qn-jVR" firstAttribute="centerY" secondItem="DfP-f0-rKi" secondAttribute="centerY" id="SsT-48-xA7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="rOv-NK-vhm" secondAttribute="trailing" id="fDR-ly-M9f"/>
                                                 <constraint firstItem="8Qz-Qn-jVR" firstAttribute="leading" secondItem="DfP-f0-rKi" secondAttribute="leadingMargin" id="hmq-5p-ZuJ"/>
@@ -1024,10 +885,10 @@ Made with ❤️ &amp; ☕️ in Toronto, Canada</string>
             </objects>
             <point key="canvasLocation" x="12891" y="1655"/>
         </scene>
-        <!--Navigation View Controller-->
+        <!--Navigation-->
         <scene sceneID="MaE-GZ-Oxb">
             <objects>
-                <navigationController id="uTQ-Kb-CIV" customClass="NavigationViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="uTQ-Kb-CIV" userLabel="Navigation" customClass="NavigationViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="mjH-Gd-tp8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1052,7 +913,6 @@ Made with ❤️ &amp; ☕️ in Toronto, Canada</string>
         <image name="alarm-bg" width="768" height="768"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="chevron.up.square" catalog="system" width="128" height="114"/>
-        <image name="circle-button" width="50" height="50"/>
         <image name="options-bg" width="200" height="128"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="plus.slash.minus" catalog="system" width="128" height="115"/>

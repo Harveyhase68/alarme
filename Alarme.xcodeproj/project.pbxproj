@@ -11,6 +11,8 @@
 		733EDC212458B3D20020AD96 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC202458B3D20020AD96 /* Sound.swift */; };
 		733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */; };
 		733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */; };
+		734E367E246B0D9F00274210 /* RepeatDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E367C246B0D9F00274210 /* RepeatDaysCell.xib */; };
+		734E3680246B142300274210 /* RepeatDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E367F246B142300274210 /* RepeatDaysCell.swift */; };
 		7368B775246068D8009C68C4 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B774246068D8009C68C4 /* SoundManager.swift */; };
 		7368B77724606929009C68C4 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B77624606929009C68C4 /* ErrorManager.swift */; };
 		7368B77924607035009C68C4 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B77824607035009C68C4 /* Sounds.swift */; };
@@ -20,10 +22,10 @@
 		73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A9B244F8BB000E0297D /* NavigationViewController.swift */; };
 		73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */; };
 		73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */; };
-		73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */; };
-		73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */; };
-		73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */; };
-		73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */; };
+		73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */; };
+		73CC1EBE24378A1F009744F1 /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */; };
+		73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundListCell.swift */; };
+		73CC1EC22437A88B009744F1 /* SoundListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EC02437A88B009744F1 /* SoundListCell.xib */; };
 		73D8614D246330940001A3B1 /* It Takes One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86143246330920001A3B1 /* It Takes One.mp3 */; };
 		73D8614E246330940001A3B1 /* Blugrass Billy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86144246330920001A3B1 /* Blugrass Billy.mp3 */; };
 		73D8614F246330940001A3B1 /* Mr. Mason.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D86145246330920001A3B1 /* Mr. Mason.mp3 */; };
@@ -48,6 +50,8 @@
 		733EDC202458B3D20020AD96 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
+		734E367C246B0D9F00274210 /* RepeatDaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatDaysCell.xib; sourceTree = "<group>"; };
+		734E367F246B142300274210 /* RepeatDaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDaysCell.swift; sourceTree = "<group>"; };
 		7368B774246068D8009C68C4 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		7368B77624606929009C68C4 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		7368B77824607035009C68C4 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
@@ -57,10 +61,10 @@
 		73877A9B244F8BB000E0297D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HideEmptyCells.swift"; sourceTree = "<group>"; };
 		73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ShowInfoWhenEmpty.swift"; sourceTree = "<group>"; };
-		73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
-		73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
-		73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
-		73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
+		73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
+		73CC1EBF2437A88B009744F1 /* SoundListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListCell.swift; sourceTree = "<group>"; };
+		73CC1EC02437A88B009744F1 /* SoundListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundListCell.xib; sourceTree = "<group>"; };
 		73D86143246330920001A3B1 /* It Takes One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "It Takes One.mp3"; sourceTree = "<group>"; };
 		73D86144246330920001A3B1 /* Blugrass Billy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Blugrass Billy.mp3"; sourceTree = "<group>"; };
 		73D86145246330920001A3B1 /* Mr. Mason.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr. Mason.mp3"; sourceTree = "<group>"; };
@@ -120,21 +124,13 @@
 			path = Alarm;
 			sourceTree = "<group>";
 		};
-		7340C4182461B02300322353 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				7368B77624606929009C68C4 /* ErrorManager.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
 		73877A8E244F5AB500E0297D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7340C4182461B02300322353 /* Error */,
 				7340C4172461B01C00322353 /* Alarm */,
 				7340C4162461B01500322353 /* Sound */,
 				7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */,
+				7368B77624606929009C68C4 /* ErrorManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,10 +150,12 @@
 		73877A90244F5D5800E0297D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				73CC1EBF2437A88B009744F1 /* SoundTableViewCell.swift */,
-				73CC1EC02437A88B009744F1 /* SoundTableViewCell.xib */,
-				73CC1EBB24378A1F009744F1 /* AlarmTableViewCell.swift */,
-				73CC1EBC24378A1F009744F1 /* AlarmTableViewCell.xib */,
+				73CC1EBF2437A88B009744F1 /* SoundListCell.swift */,
+				73CC1EC02437A88B009744F1 /* SoundListCell.xib */,
+				73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */,
+				73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */,
+				734E367F246B142300274210 /* RepeatDaysCell.swift */,
+				734E367C246B0D9F00274210 /* RepeatDaysCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -290,7 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D86155246330940001A3B1 /* Country Pickin'.mp3 in Resources */,
-				73CC1EC22437A88B009744F1 /* SoundTableViewCell.xib in Resources */,
+				734E367E246B0D9F00274210 /* RepeatDaysCell.xib in Resources */,
+				73CC1EC22437A88B009744F1 /* SoundListCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
 				73D86154246330940001A3B1 /* Black Fedora.mp3 in Resources */,
 				73D86153246330940001A3B1 /* Banana Tree.mp3 in Resources */,
@@ -303,7 +302,7 @@
 				73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */,
 				73D8614F246330940001A3B1 /* Mr. Mason.mp3 in Resources */,
 				73D86156246330940001A3B1 /* Fields of Joy.mp3 in Resources */,
-				73CC1EBE24378A1F009744F1 /* AlarmTableViewCell.xib in Resources */,
+				73CC1EBE24378A1F009744F1 /* AlarmListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CC1EBD24378A1F009744F1 /* AlarmTableViewCell.swift in Sources */,
+				73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */,
+				734E3680246B142300274210 /* RepeatDaysCell.swift in Sources */,
 				733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */,
 				7368B77724606929009C68C4 /* ErrorManager.swift in Sources */,
 				73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */,
@@ -327,7 +327,7 @@
 				733EDC212458B3D20020AD96 /* Sound.swift in Sources */,
 				7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */,
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
-				73CC1EC12437A88B009744F1 /* SoundTableViewCell.swift in Sources */,
+				73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */,
 				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,
 				7368B77924607035009C68C4 /* Sounds.swift in Sources */,
 				73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */,

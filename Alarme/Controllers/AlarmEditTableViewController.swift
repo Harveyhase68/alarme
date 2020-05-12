@@ -20,6 +20,8 @@ class AlarmEditTableViewController: UITableViewController {
     @IBOutlet var optionCell: UITableViewCell!
     @IBOutlet var alarmLabelTextField: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +30,10 @@ class AlarmEditTableViewController: UITableViewController {
         keyboardManager.dismissKeyboardOnTapAnywhere(on: self.view)
 
     }
+    
+    //MARK: - Repeat Methods
+    
+    
     
     //MARK: - Sound methods
     

@@ -8,17 +8,17 @@
 
 import UIKit
 
-protocol SoundTableViewCellDelegate {
+protocol SoundListCellDelegate {
     func didTapPlayButton(playButton: UIButton)
 }
 
-class SoundTableViewCell: UITableViewCell {
+class SoundListCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var playButton: UIButton!
     
     var soundItem: Sound!
-    var delegate: SoundTableViewCellDelegate?
+    var delegate: SoundListCellDelegate?
     
     func setSound(sound: Sound) {
         soundItem = sound

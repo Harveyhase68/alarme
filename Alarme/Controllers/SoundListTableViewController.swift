@@ -27,7 +27,7 @@ class SoundListTableViewController: UITableViewController {
     }
     
     fileprivate func configureTableView() {
-        tableView.register(UINib(nibName: "SoundTableViewCell", bundle: nil), forCellReuseIdentifier: K.soundCell)
+        tableView.register(UINib(nibName: K.Cell.soundCellNib, bundle: nil), forCellReuseIdentifier: K.Cell.soundCell)
         tableView.hideEmptyCells()
     }
     
@@ -51,7 +51,7 @@ class SoundListTableViewController: UITableViewController {
         if let currentSound = soundManager.currentlyPlaying() {
             soundManager.stop()
             if let indexStop = sounds.getPosition(currentSound) {
-                let cell = tableView.cellForRow(at: IndexPath(item: indexStop, section: 0)) as! SoundTableViewCell
+                let cell = tableView.cellForRow(at: IndexPath(item: indexStop, section: 0)) as! SoundListCell
                 changeButtonImage(for: cell.playButton, play: true)
             }
         }
@@ -65,7 +65,7 @@ class SoundListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sound = sounds.getSound(at: indexPath.row)!
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.soundCell, for: indexPath) as! SoundTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.soundCell, for: indexPath) as! SoundListCell
         cell.delegate = self
         cell.setSound(sound: sound)
         
@@ -95,7 +95,7 @@ class SoundListTableViewController: UITableViewController {
 
 //MARK: - Sound table view cell delegate
 
-extension SoundListTableViewController: SoundTableViewCellDelegate {
+extension SoundListTableViewController: SoundListCellDelegate {
     
     func didTapPlayButton(playButton: UIButton) {
         

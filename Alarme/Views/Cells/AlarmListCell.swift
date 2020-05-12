@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlarmTableViewCell: UITableViewCell {
+class AlarmListCell: UITableViewCell {
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var timeLabel: UILabel!

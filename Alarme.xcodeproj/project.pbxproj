@@ -20,6 +20,7 @@
 		73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A95244F77B800E0297D /* SettingsTableViewController.swift */; };
 		73877A98244F830D00E0297D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A97244F830D00E0297D /* Constants.swift */; };
 		73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A9B244F8BB000E0297D /* NavigationViewController.swift */; };
+		7392DB0D246C3EE000F12242 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */; };
 		73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */; };
 		73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */; };
 		73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */; };
@@ -59,6 +60,7 @@
 		73877A95244F77B800E0297D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		73877A97244F830D00E0297D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73877A9B244F8BB000E0297D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 		73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HideEmptyCells.swift"; sourceTree = "<group>"; };
 		73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ShowInfoWhenEmpty.swift"; sourceTree = "<group>"; };
 		73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */,
 				733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */,
 				73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */,
+				7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */,
 				733EDC212458B3D20020AD96 /* Sound.swift in Sources */,
 				7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */,
+				7392DB0D246C3EE000F12242 /* UpgradeViewController.swift in Sources */,
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
 				73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */,
 				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,

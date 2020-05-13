@@ -25,6 +25,7 @@ struct K {
         static let goToAlarmEdit = "goToAlarmEditScene"
         static let goToSounds = "goToSoundsScene"
         static let goToOptions = "goToOptionsScene"
+        static let goToSettings = "goToSettingsScene"
     }
     
     struct Sound {

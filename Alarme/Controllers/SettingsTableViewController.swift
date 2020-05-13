@@ -21,6 +21,12 @@ class SettingsTableViewController: UITableViewController {
         darkModeSwitchValueChanged(darkModeSwitch)
     }
     
+    //MARK: - Upgrade methods
+    
+    @IBAction func unwindToSettings(_ unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
     //MARK: - Style Preference
     
     @IBAction func darkModeSwitchValueChanged(_ sender: UISwitch) {

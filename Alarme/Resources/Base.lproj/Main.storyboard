@@ -345,7 +345,7 @@
         <!--Upgrade App-->
         <scene sceneID="k02-Pn-BSA">
             <objects>
-                <viewController id="Dcp-vZ-iMf" userLabel="Upgrade App" sceneMemberID="viewController">
+                <viewController id="Dcp-vZ-iMf" userLabel="Upgrade App" customClass="UpgradeViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-Pf-GdF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,10 +354,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Upgrade Alarme" id="wXK-Ks-VQP">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="1Ct-Vi-Zc1"/>
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="1Ct-Vi-Zc1">
+                            <connections>
+                                <action selector="didTapCancelButton:" destination="Dcp-vZ-iMf" id="L6a-Sl-7gN"/>
+                                <segue destination="Tca-A8-jzV" kind="unwind" identifier="goToSettingsScene" unwindAction="unwindToSettings:" id="L7m-30-3u3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK2-pQ-c5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Tca-A8-jzV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="12117" y="2401"/>
         </scene>

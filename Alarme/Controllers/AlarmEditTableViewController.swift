@@ -20,8 +20,6 @@ class AlarmEditTableViewController: UITableViewController {
     @IBOutlet var optionCell: UITableViewCell!
     @IBOutlet var alarmLabelTextField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +35,7 @@ class AlarmEditTableViewController: UITableViewController {
     
     //MARK: - Sound methods
     
-    func updatedSelectedSoundName() {
+    func updateSelectedSoundName() {
         if let selectedSound = selectedSound,
             let soundLabel = soundLabel {
             soundLabel.text = selectedSound.name
@@ -45,7 +43,7 @@ class AlarmEditTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
-        updatedSelectedSoundName()
+        updateSelectedSoundName()
     }
     
     //MARK: - Snooze methods

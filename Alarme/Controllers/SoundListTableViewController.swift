@@ -72,14 +72,6 @@ class SoundListTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        defer {
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
-        let sound = sounds.getSound(at: indexPath.row)
-        performSegue(withIdentifier: K.Segue.goToAlarmEdit, sender: sound)
-    }
-    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -89,6 +81,14 @@ class SoundListTableViewController: UITableViewController {
         let destVC = segue.destination as! AlarmEditTableViewController
         let sound = sounds.getSound(at: indexPath.row)
         destVC.selectedSound = sound
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        defer {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        let sound = sounds.getSound(at: indexPath.row)
+        performSegue(withIdentifier: K.Segue.goToAlarmEdit, sender: sound)
     }
     
 }

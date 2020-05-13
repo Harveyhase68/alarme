@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="14431.884057971016" y="1654.6875"/>
         </scene>
-        <!--Upgrade App-->
+        <!--Upgrade-->
         <scene sceneID="k02-Pn-BSA">
             <objects>
-                <viewController id="Dcp-vZ-iMf" userLabel="Upgrade App" customClass="UpgradeViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dcp-vZ-iMf" userLabel="Upgrade" customClass="UpgradeViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-Pf-GdF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -367,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="12117" y="2401"/>
         </scene>
-        <!--About App-->
+        <!--About-->
         <scene sceneID="y7i-ka-ZVv">
             <objects>
-                <viewController id="Sx3-CF-EhA" userLabel="About App" sceneMemberID="viewController">
+                <viewController id="Sx3-CF-EhA" userLabel="About" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjR-Ag-nvP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -757,6 +757,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqF-NN-7L6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15292.753623188408" y="2400.6696428571427"/>
+        </scene>
+        <!--takeAPictureViewController-->
+        <scene sceneID="TTt-Pg-DtZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TakeAPicture" referencedIdentifier="takeAPictureViewController" id="vhE-Xf-dyp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBI-RU-8r5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15821" y="2221"/>
+        </scene>
+        <!--QRCodeViewController-->
+        <scene sceneID="39t-Qh-Ebt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRCode" referencedIdentifier="QRCodeViewController" id="RiA-E2-z2J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM3-v5-GHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15800" y="2263"/>
+        </scene>
+        <!--mathProblemViewController-->
+        <scene sceneID="XLV-OV-aFu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MathProblem" referencedIdentifier="mathProblemViewController" id="ss2-qR-suZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Kn-QA-dzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15823" y="2318"/>
+        </scene>
+        <!--shakePhoneViewController-->
+        <scene sceneID="sjC-Jk-3XP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShakePhone" referencedIdentifier="shakePhoneViewController" id="Gyr-YJ-F5p" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98Z-6m-FqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15817" y="2362"/>
+        </scene>
+        <!--evasiveButtonViewController-->
+        <scene sceneID="fHV-6f-cxL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EvasiveButton" referencedIdentifier="evasiveButtonViewController" id="e4w-FD-q2V" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xD-Xj-y0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15826" y="2417"/>
         </scene>
         <!--Settings-->
         <scene sceneID="OPB-hs-2Mp">

@@ -26,7 +26,7 @@ class SoundListTableViewController: UITableViewController {
         soundManager.stop()
     }
     
-    fileprivate func configureTableView() {
+    func configureTableView() {
         tableView.register(UINib(nibName: K.Cell.soundCellNib, bundle: nil), forCellReuseIdentifier: K.Cell.soundCell)
         tableView.hideEmptyCells()
     }
@@ -98,7 +98,6 @@ class SoundListTableViewController: UITableViewController {
 extension SoundListTableViewController: SoundListCellDelegate {
     
     func didTapPlayButton(playButton: UIButton) {
-        
         if let index = getViewIndexInTableView(tableView: tableView, view: playButton),
             let sound = sounds.getSound(at: index.row) {
             // If the sound is located in the same cell as the currently playing one - stop playing it and return
@@ -112,7 +111,6 @@ extension SoundListTableViewController: SoundListCellDelegate {
             // Start playing the new sound
             soundManager.play(this: sound)
             changeButtonImage(for: playButton, play: false)
-            
         }
     }
     

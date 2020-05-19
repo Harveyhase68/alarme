@@ -11,8 +11,6 @@
 		733EDC212458B3D20020AD96 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC202458B3D20020AD96 /* Sound.swift */; };
 		733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */; };
 		733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */; };
-		734E367E246B0D9F00274210 /* RepeatDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E367C246B0D9F00274210 /* RepeatDaysCell.xib */; };
-		734E3680246B142300274210 /* RepeatDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E367F246B142300274210 /* RepeatDaysCell.swift */; };
 		7368B775246068D8009C68C4 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B774246068D8009C68C4 /* SoundManager.swift */; };
 		7368B77724606929009C68C4 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B77624606929009C68C4 /* ErrorManager.swift */; };
 		7368B77924607035009C68C4 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368B77824607035009C68C4 /* Sounds.swift */; };
@@ -57,8 +55,6 @@
 		733EDC202458B3D20020AD96 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
-		734E367C246B0D9F00274210 /* RepeatDaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatDaysCell.xib; sourceTree = "<group>"; };
-		734E367F246B142300274210 /* RepeatDaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDaysCell.swift; sourceTree = "<group>"; };
 		7368B774246068D8009C68C4 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		7368B77624606929009C68C4 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		7368B77824607035009C68C4 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
@@ -111,6 +107,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73274095247469C300827ED5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7368B774246068D8009C68C4 /* SoundManager.swift */,
+				7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */,
+				7368B77624606929009C68C4 /* ErrorManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7327409724746AB000827ED5 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */,
+				7392DB11246C4BAD00F12242 /* QRCode.storyboard */,
+				7392DB13246C4BC500F12242 /* MathProblem.storyboard */,
+				7392DB15246C4C0800F12242 /* ShakePhone.storyboard */,
+				7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
 		7340C4152461AFCD00322353 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,31 +138,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		7340C4162461B01500322353 /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-				733EDC202458B3D20020AD96 /* Sound.swift */,
-				7368B77824607035009C68C4 /* Sounds.swift */,
-				7368B774246068D8009C68C4 /* SoundManager.swift */,
-			);
-			path = Sound;
-			sourceTree = "<group>";
-		};
-		7340C4172461B01C00322353 /* Alarm */ = {
-			isa = PBXGroup;
-			children = (
-				73877A92244F61F500E0297D /* Alarm.swift */,
-			);
-			path = Alarm;
-			sourceTree = "<group>";
-		};
 		73877A8E244F5AB500E0297D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7340C4172461B01C00322353 /* Alarm */,
-				7340C4162461B01500322353 /* Sound */,
-				7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */,
-				7368B77624606929009C68C4 /* ErrorManager.swift */,
+				73877A92244F61F500E0297D /* Alarm.swift */,
+				733EDC202458B3D20020AD96 /* Sound.swift */,
+				7368B77824607035009C68C4 /* Sounds.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,8 +168,6 @@
 				73CC1EC02437A88B009744F1 /* SoundListCell.xib */,
 				73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */,
 				73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */,
-				734E367F246B142300274210 /* RepeatDaysCell.swift */,
-				734E367C246B0D9F00274210 /* RepeatDaysCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -189,21 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				73DEBBE024253D22002B5EE5 /* Main.storyboard */,
-				7392DB19246C4C3C00F12242 /* Options */,
+				7327409724746AB000827ED5 /* Options */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		7392DB19246C4C3C00F12242 /* Options */ = {
-			isa = PBXGroup;
-			children = (
-				7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */,
-				7392DB11246C4BAD00F12242 /* QRCode.storyboard */,
-				7392DB13246C4BC500F12242 /* MathProblem.storyboard */,
-				7392DB15246C4C0800F12242 /* ShakePhone.storyboard */,
-				7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */,
-			);
-			path = Options;
 			sourceTree = "<group>";
 		};
 		7392DB1C246C55C400F12242 /* Options */ = {
@@ -272,10 +257,11 @@
 				73877A97244F830D00E0297D /* Constants.swift */,
 				73DEBBEB24253D23002B5EE5 /* Info.plist */,
 				73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */,
-				7392DB0E246C419A00F12242 /* Storyboards */,
 				73877A8E244F5AB500E0297D /* Models */,
 				73CC1EAA243788DE009744F1 /* Views */,
 				73877A8F244F5AC500E0297D /* Controllers */,
+				73274095247469C300827ED5 /* Managers */,
+				7392DB0E246C419A00F12242 /* Storyboards */,
 				7340C4152461AFCD00322353 /* Extensions */,
 				73877A91244F5D8C00E0297D /* Resources */,
 			);
@@ -341,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D86155246330940001A3B1 /* Country Pickin'.mp3 in Resources */,
-				734E367E246B0D9F00274210 /* RepeatDaysCell.xib in Resources */,
 				73CC1EC22437A88B009744F1 /* SoundListCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
 				73D86154246330940001A3B1 /* Black Fedora.mp3 in Resources */,
@@ -373,7 +358,6 @@
 			files = (
 				73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */,
 				7392DB1B246C553A00F12242 /* OptionsViewController.swift in Sources */,
-				734E3680246B142300274210 /* RepeatDaysCell.swift in Sources */,
 				733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */,
 				7368B77724606929009C68C4 /* ErrorManager.swift in Sources */,
 				73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */,

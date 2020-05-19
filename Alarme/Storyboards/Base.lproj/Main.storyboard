@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTQ-Kb-CIV">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -98,23 +98,198 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="wRn-Wl-edu">
+                            <tableViewSection headerTitle="Repeat alarm on:" id="wRn-Wl-edu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="repeatDaysCell" rowHeight="50" id="xwa-l7-bET">
-                                        <rect key="frame" x="0.0" y="312.66666603088379" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="repeatDaysCell" rowHeight="50" id="zlL-r6-cWs" userLabel="Repeat Days Cell">
+                                        <rect key="frame" x="0.0" y="333" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwa-l7-bET" id="DpC-BH-3J9">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zlL-r6-cWs" id="aq4-he-1Yv">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-k3-OO2">
+                                                    <rect key="frame" x="30" y="0.0" width="354" height="50"/>
+                                                    <subviews>
+                                                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfU-By-3iX" userLabel="Mon">
+                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-4y-0hR">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="ACa-4y-0hR" secondAttribute="height" multiplier="1:1" id="6YI-Xh-yTA"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="M" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="rK8-Dm-i64"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ACa-4y-0hR" firstAttribute="centerX" secondItem="SfU-By-3iX" secondAttribute="centerX" id="Tkv-nZ-4Vi"/>
+                                                                <constraint firstItem="ACa-4y-0hR" firstAttribute="centerY" secondItem="SfU-By-3iX" secondAttribute="centerY" id="a8I-jl-orm"/>
+                                                                <constraint firstItem="ACa-4y-0hR" firstAttribute="leading" secondItem="SfU-By-3iX" secondAttribute="leading" id="kSP-DE-gXk"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmy-f0-lew" userLabel="Tue">
+                                                            <rect key="frame" x="52" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0l-ft-q7k">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="K0l-ft-q7k" secondAttribute="height" multiplier="1:1" id="9qH-AW-v4t"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="T" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="txw-py-KqU"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="K0l-ft-q7k" firstAttribute="centerY" secondItem="jmy-f0-lew" secondAttribute="centerY" id="6KY-Zb-K3H"/>
+                                                                <constraint firstItem="K0l-ft-q7k" firstAttribute="centerX" secondItem="jmy-f0-lew" secondAttribute="centerX" id="7bp-97-CsH"/>
+                                                                <constraint firstItem="K0l-ft-q7k" firstAttribute="leading" secondItem="jmy-f0-lew" secondAttribute="leading" id="7hg-Jk-HW0"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxR-JI-dmx" userLabel="Wed">
+                                                            <rect key="frame" x="104" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mn2-no-tus">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="Mn2-no-tus" secondAttribute="height" multiplier="1:1" id="d61-y5-wUj"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="W" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="cVT-yk-9rG"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Mn2-no-tus" firstAttribute="centerX" secondItem="RxR-JI-dmx" secondAttribute="centerX" id="G4t-fe-Jz6"/>
+                                                                <constraint firstItem="Mn2-no-tus" firstAttribute="centerY" secondItem="RxR-JI-dmx" secondAttribute="centerY" id="Nvv-AU-MKe"/>
+                                                                <constraint firstItem="Mn2-no-tus" firstAttribute="leading" secondItem="RxR-JI-dmx" secondAttribute="leading" id="mLy-Xy-my4"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzn-nh-ETO" userLabel="Thu">
+                                                            <rect key="frame" x="156" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-x4-RzE">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="qJZ-x4-RzE" secondAttribute="height" multiplier="1:1" id="ZRY-u0-63W"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="T" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="2y2-Sh-8jP"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="qJZ-x4-RzE" firstAttribute="centerY" secondItem="nzn-nh-ETO" secondAttribute="centerY" id="uHz-qv-jxC"/>
+                                                                <constraint firstItem="qJZ-x4-RzE" firstAttribute="centerX" secondItem="nzn-nh-ETO" secondAttribute="centerX" id="uN1-jU-YSW"/>
+                                                                <constraint firstItem="qJZ-x4-RzE" firstAttribute="leading" secondItem="nzn-nh-ETO" secondAttribute="leading" id="wcb-3s-9gg"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQy-67-reR" userLabel="Fri">
+                                                            <rect key="frame" x="208" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-bl-uce">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="XOY-bl-uce" secondAttribute="height" multiplier="1:1" id="hWe-Lp-mbt"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="F" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="kWf-dp-GT4"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="XOY-bl-uce" firstAttribute="centerY" secondItem="AQy-67-reR" secondAttribute="centerY" id="7uJ-Fv-47j"/>
+                                                                <constraint firstItem="XOY-bl-uce" firstAttribute="leading" secondItem="AQy-67-reR" secondAttribute="leading" id="Cwf-OZ-KgO"/>
+                                                                <constraint firstItem="XOY-bl-uce" firstAttribute="centerX" secondItem="AQy-67-reR" secondAttribute="centerX" id="lzI-mT-UM9"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulb-nW-Gjl" userLabel="Sat">
+                                                            <rect key="frame" x="260" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-1Y-VLf">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="Lgo-1Y-VLf" secondAttribute="height" multiplier="1:1" id="0bL-IA-Vci"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="S" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="m6H-0z-uWX"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Lgo-1Y-VLf" firstAttribute="centerX" secondItem="Ulb-nW-Gjl" secondAttribute="centerX" id="1s0-2P-3AH"/>
+                                                                <constraint firstItem="Lgo-1Y-VLf" firstAttribute="leading" secondItem="Ulb-nW-Gjl" secondAttribute="leading" id="cgl-tr-wf5"/>
+                                                                <constraint firstItem="Lgo-1Y-VLf" firstAttribute="centerY" secondItem="Ulb-nW-Gjl" secondAttribute="centerY" id="iM6-zF-Csd"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyF-Iw-Fxp" userLabel="Sun">
+                                                            <rect key="frame" x="312" y="0.0" width="42" height="50"/>
+                                                            <subviews>
+                                                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ky-i7-eTb">
+                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="4ky-i7-eTb" secondAttribute="height" multiplier="1:1" id="SKQ-VW-PrQ"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <state key="normal" title="S" backgroundImage="circle-empty-button">
+                                                                        <color key="titleColor" name="color-black-white"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="repeatDaysButtonTapped:" destination="TOI-0W-0nc" eventType="touchUpInside" id="QxK-cL-K6F"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="4ky-i7-eTb" firstAttribute="centerX" secondItem="IyF-Iw-Fxp" secondAttribute="centerX" id="C6b-gy-Z16"/>
+                                                                <constraint firstItem="4ky-i7-eTb" firstAttribute="leading" secondItem="IyF-Iw-Fxp" secondAttribute="leading" id="aJe-NC-fE9"/>
+                                                                <constraint firstItem="4ky-i7-eTb" firstAttribute="centerY" secondItem="IyF-Iw-Fxp" secondAttribute="centerY" id="fsc-qN-WLe"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qc6-k3-OO2" firstAttribute="leading" secondItem="aq4-he-1Yv" secondAttribute="leading" constant="30" id="NEU-rK-PCE"/>
+                                                <constraint firstAttribute="trailing" secondItem="qc6-k3-OO2" secondAttribute="trailing" constant="30" id="Q2d-iQ-Kzn"/>
+                                                <constraint firstAttribute="bottom" secondItem="qc6-k3-OO2" secondAttribute="bottom" id="eHe-Q8-Qyf"/>
+                                                <constraint firstItem="qc6-k3-OO2" firstAttribute="top" secondItem="aq4-he-1Yv" secondAttribute="top" id="mmv-ho-u3R"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
+                                        <viewLayoutGuide key="safeArea" id="5qB-M1-7WO"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="uej-vb-Ath">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oDq-2K-XmO" detailTextLabel="sFz-Nb-vgr" style="IBUITableViewCellStyleValue1" id="Npg-Mf-uVF">
-                                        <rect key="frame" x="0.0" y="397.66666603088379" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="418" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Npg-Mf-uVF" id="Kqq-ss-1av">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -127,7 +302,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Mon  Tue  Wed  Thu  Fri  Sat" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sFz-Nb-vgr">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Mon  Tue  Wed  Thu  Fri  Sat" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sFz-Nb-vgr" userLabel="Days">
                                                     <rect key="frame" x="179.33333333333337" y="11.999999999999998" width="214.66666666666666" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -139,7 +314,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="LHP-hM-gtt">
-                                        <rect key="frame" x="0.0" y="441.66666603088379" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="462" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHP-hM-gtt" id="QRo-l8-n3e">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -168,7 +343,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="il4-Kd-hQp" detailTextLabel="7nh-0N-Quc" style="IBUITableViewCellStyleValue1" id="WZV-tR-rze">
-                                        <rect key="frame" x="0.0" y="485.16666603088379" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="505.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WZV-tR-rze" id="kL6-eq-3TR">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
@@ -196,7 +371,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="ZtJ-hr-eBF">
-                                        <rect key="frame" x="0.0" y="528.66666603088379" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="549" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZtJ-hr-eBF" id="oIv-7N-3P0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -228,7 +403,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B88-OI-z7i" detailTextLabel="DpD-US-2Dn" style="IBUITableViewCellStyleValue1" id="GOI-1B-ao8">
-                                        <rect key="frame" x="0.0" y="572.16666603088379" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="592.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOI-1B-ao8" id="ZIO-W4-ZGy">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
@@ -260,7 +435,7 @@
                             <tableViewSection id="rSw-AK-Qmz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="44" id="EjO-D1-ECZ">
-                                        <rect key="frame" x="0.0" y="650.66666603088379" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="671" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EjO-D1-ECZ" id="2X0-k6-Nll">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -334,8 +509,16 @@
                         <outlet property="alarmLabelTextField" destination="4Um-CW-p9I" id="Pkj-X9-F2x"/>
                         <outlet property="optionCell" destination="GOI-1B-ao8" id="gx3-pC-uC8"/>
                         <outlet property="optionLabel" destination="DpD-US-2Dn" id="kmk-gD-c01"/>
+                        <outlet property="repeatDaysLabel" destination="sFz-Nb-vgr" id="qYv-IO-GfA"/>
                         <outlet property="snoozeSwitch" destination="872-C4-3J2" id="zWO-wI-Eoc"/>
                         <outlet property="soundLabel" destination="7nh-0N-Quc" id="ued-8F-qm2"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="ACa-4y-0hR" collectionClass="NSMutableArray" id="DQ3-jN-zaJ"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="K0l-ft-q7k" collectionClass="NSMutableArray" id="hfK-8f-gMz"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="Mn2-no-tus" collectionClass="NSMutableArray" id="iDg-bl-EVw"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="qJZ-x4-RzE" collectionClass="NSMutableArray" id="lgy-jM-TOf"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="XOY-bl-uce" collectionClass="NSMutableArray" id="wnH-iA-9CI"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="Lgo-1Y-VLf" collectionClass="NSMutableArray" id="7Za-zg-fF9"/>
+                        <outletCollection property="repeatDaysButtonArray" destination="4ky-i7-eTb" collectionClass="NSMutableArray" id="8SY-7e-z9N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5D-qU-GO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -959,6 +1142,7 @@ Made with ❤️ &amp; ☕️ in Toronto, Canada</string>
         <image name="alarm-bg" width="768" height="768"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="chevron.up.square" catalog="system" width="128" height="114"/>
+        <image name="circle-empty-button" width="50" height="50"/>
         <image name="options-bg" width="200" height="128"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="plus.slash.minus" catalog="system" width="128" height="115"/>

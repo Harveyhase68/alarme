@@ -51,7 +51,7 @@
                 <outlet property="nameLabel" destination="BVW-mP-kND" id="L86-8R-pvH"/>
                 <outlet property="playButton" destination="h6I-mT-SI8" id="Pfs-8R-ZWw"/>
             </connections>
-            <point key="canvasLocation" x="-428" y="-44"/>
+            <point key="canvasLocation" x="-64" y="-26"/>
         </tableViewCell>
     </objects>
     <resources>

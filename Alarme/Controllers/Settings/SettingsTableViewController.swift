@@ -10,9 +10,9 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    @IBOutlet var darkModeSwitch: UISwitch!
-    
     var isDarkMode = false
+    
+    @IBOutlet var darkModeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()

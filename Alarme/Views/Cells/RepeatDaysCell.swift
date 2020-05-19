@@ -8,18 +8,18 @@
 
 import UIKit
 
-class RepeatDaysCell: UITableViewCell {
-    
-    @IBOutlet var mondayButton: UIButton!
-    @IBOutlet var tuesdayButton: UIButton!
-    @IBOutlet var wednesdayButton: UIButton!
-    @IBOutlet var thursdayButton: UIButton!
-    @IBOutlet var fridayButton: UIButton!
-    @IBOutlet var saturdayButton: UIButton!
-    @IBOutlet var sundayButton: UIButton!
-    
-    var buttonArray: [UIButton] = []
-    
-    
+protocol RepeatDaysCellDelegate {
+    func didTapRepeatDaysButton(repeatDaysButtons: [UIButton])
+}
 
+class RepeatDayCell: UITableViewCell {
+    
+    @IBOutlet var buttons: [UIButton]!
+    
+    var delegate: RepeatDaysCellDelegate?
+    
+    @IBAction func repeatDaysButtonTapped(_ sender: UIButton) {
+        delegate?.didTapRepeatDaysButton(repeatDaysButtons: buttons)
+    }
+    
 }

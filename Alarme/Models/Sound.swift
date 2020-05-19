@@ -9,9 +9,9 @@
 import Foundation
 
 struct Sound: Equatable {
-
     let id: Int
     let name: String
     let duration: Double
-
 }
+
+//TODO: Remove after Core Data implementation

@@ -7,17 +7,14 @@
 //
 
 import Foundation
-import UIKit
 
 struct Alarm {
-
     var id: Int
     var time: Date
     var repeatDays: [String]
     var name: String
-    var sound: String
+    var sound: Sound
     var option: String
-
-    let backgroundImage: UIImage
-
 }
+
+//TODO: Remove after Core Data implementation

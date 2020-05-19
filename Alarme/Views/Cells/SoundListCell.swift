@@ -13,12 +13,12 @@ protocol SoundListCellDelegate {
 }
 
 class SoundListCell: UITableViewCell {
-
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var playButton: UIButton!
     
     var soundItem: Sound!
     var delegate: SoundListCellDelegate?
+
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var playButton: UIButton!
     
     func setSound(sound: Sound) {
         soundItem = sound

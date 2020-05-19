@@ -6,7 +6,7 @@
 //  Copyright © 2020 Danijela Vrzan. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Sounds {
     

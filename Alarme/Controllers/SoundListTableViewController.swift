@@ -21,7 +21,7 @@ class SoundListTableViewController: UITableViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+        super.viewWillDisappear(animated)
         
         soundManager.stop()
     }
@@ -93,7 +93,7 @@ class SoundListTableViewController: UITableViewController {
     
 }
 
-//MARK: - Sound table view cell delegate
+//MARK: - Sound list cell delegate
 
 extension SoundListTableViewController: SoundListCellDelegate {
     

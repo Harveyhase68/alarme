@@ -19,6 +19,8 @@ class AlarmEditTableViewController: UITableViewController {
     @IBOutlet var snoozeSwitch: UISwitch!
     @IBOutlet var optionCell: UITableViewCell!
     @IBOutlet var alarmLabelTextField: UITextField!
+    @IBOutlet var repeatDaysLabel: UILabel!
+    @IBOutlet var repeatDaysButtonArray: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +28,17 @@ class AlarmEditTableViewController: UITableViewController {
         alarmLabelTextField.delegate = self
         keyboardManager.dismissKeyboardOnScroll(on: self.tableView)
         keyboardManager.dismissKeyboardOnTapAnywhere(on: self.view)
-
     }
     
     //MARK: - Repeat Methods
     
-    
+    @IBAction func repeatDaysButtonTapped(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        for sender in repeatDaysButtonArray {
+            sender.setBackgroundImage(UIImage(named: "circle-button.png"), for: .selected)
+            sender.setTitleColor(UIColor(named: "color-text-white"), for: .selected)
+        }
+    }
     
     //MARK: - Sound methods
     

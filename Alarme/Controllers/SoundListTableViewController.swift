@@ -42,7 +42,7 @@ class SoundListTableViewController: UITableViewController {
                           duration: 0.4,
                           options: .transitionCrossDissolve,
                           animations: {
-                            button.setImage(UIImage(systemName: play ? K.playImage : K.stopImage), for: .normal)
+                            button.setImage(UIImage(systemName: play ? K.Image.play : K.Image.stop), for: .normal)
                             
         }, completion: nil)
     }

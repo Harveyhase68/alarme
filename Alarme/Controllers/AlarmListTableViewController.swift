@@ -26,7 +26,7 @@ class AlarmListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tempArray.count == 0 {
-            self.tableView.showEmptyMessage(as: UIImage(named: "funny-no-alarm-temp")!)
+            self.tableView.showEmptyMessage(as: UIImage(named: "funny-no-alarm-temp.png")!)
         } else {
             self.tableView.restoreToNormalState()
         }

@@ -35,8 +35,8 @@ class AlarmEditTableViewController: UITableViewController {
     @IBAction func repeatDaysButtonTapped(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         for sender in repeatDaysButtonArray {
-            sender.setBackgroundImage(UIImage(named: "circle-button.png"), for: .selected)
-            sender.setTitleColor(UIColor(named: "color-text-white"), for: .selected)
+            sender.setBackgroundImage(UIImage(named: K.Image.circleButton), for: .selected)
+            sender.setTitleColor(UIColor(named: K.Color.white), for: .selected)
         }
     }
     
@@ -60,11 +60,7 @@ class AlarmEditTableViewController: UITableViewController {
     }
     
     func hideOptionCellFromTableView() {
-        if snoozeSwitch.isOn {
-            optionCell.isHidden = true
-        } else {
-            optionCell.isHidden = false
-        }
+        optionCell.isHidden = snoozeSwitch.isOn
     }
     
 }

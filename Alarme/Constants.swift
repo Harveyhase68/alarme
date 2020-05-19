@@ -11,8 +11,16 @@ import Foundation
 struct K {
     static let darkMode = "isDarkMode"
     static let defaults = UserDefaults.standard
-    static let playImage = "play.circle.fill"
-    static let stopImage = "stop.fill"
+    
+    struct Image {
+        static let play = "play.circle.fill"
+        static let stop = "stop.fill"
+        static let circleButton = "circle-button.png"
+    }
+    
+    struct Color {
+        static let white = "color-text-white"
+    }
     
     struct Cell {
         static let alarmCell = "alarmCell"

@@ -16,6 +16,7 @@ struct K {
         static let play = "play.circle.fill"
         static let stop = "stop.fill"
         static let circleButton = "circle-button.png"
+        static let noAlarmSetUp = "funny-no-alarm-temp.png"
     }
     
     struct Color {

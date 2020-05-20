@@ -93,6 +93,8 @@ class SoundListTableViewController: UITableViewController {
     
 }
 
+//FIXME: Fix play button icon not changing from stop to play when song finishes playing.
+
 //MARK: - Sound list cell delegate
 
 extension SoundListTableViewController: SoundListCellDelegate {

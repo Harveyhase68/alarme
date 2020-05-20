@@ -261,8 +261,8 @@
 				73CC1EAA243788DE009744F1 /* Views */,
 				73877A8F244F5AC500E0297D /* Controllers */,
 				73274095247469C300827ED5 /* Managers */,
-				7392DB0E246C419A00F12242 /* Storyboards */,
 				7340C4152461AFCD00322353 /* Extensions */,
+				7392DB0E246C419A00F12242 /* Storyboards */,
 				73877A91244F5D8C00E0297D /* Resources */,
 			);
 			path = Alarme;
